@@ -17,30 +17,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Clash-of-Clans-Logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="rOx-aA-Wl3">
-                                <rect key="frame" x="0.0" y="184" width="375" height="200"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="wbD-xP-S3j"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clash-iphone-splash.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="CoL-Rz-lPX">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cargando..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K11-B4-G2c">
-                                <rect key="frame" x="127" y="392" width="120" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cargando..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RPs-FO-A8e">
+                                <rect key="frame" x="88" y="321" width="200" height="25"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="GEl-by-KAR"/>
-                                    <constraint firstAttribute="height" constant="21" id="bpz-Js-FWW"/>
+                                    <constraint firstAttribute="width" constant="200" id="c7u-Ub-iHw"/>
+                                    <constraint firstAttribute="height" constant="25" id="rFg-VO-mF4"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="1" height="1"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="K11-B4-G2c" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Hhp-cR-QGN"/>
-                            <constraint firstItem="rOx-aA-Wl3" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-50" id="MQy-f7-S7F"/>
-                            <constraint firstItem="K11-B4-G2c" firstAttribute="top" secondItem="rOx-aA-Wl3" secondAttribute="bottom" constant="8" id="QkE-rE-lJg"/>
-                            <constraint firstItem="rOx-aA-Wl3" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="hfi-pI-RGJ"/>
-                            <constraint firstAttribute="trailing" secondItem="rOx-aA-Wl3" secondAttribute="trailing" id="xHF-sc-Xxv"/>
+                            <constraint firstAttribute="trailing" secondItem="CoL-Rz-lPX" secondAttribute="trailing" id="2hI-Hy-GTT"/>
+                            <constraint firstItem="CoL-Rz-lPX" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="9qf-V6-Cfc"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="CoL-Rz-lPX" secondAttribute="bottom" id="G62-7V-CxX"/>
+                            <constraint firstItem="RPs-FO-A8e" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="LP9-wf-d3C"/>
+                            <constraint firstItem="RPs-FO-A8e" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="RW9-mu-940"/>
+                            <constraint firstItem="CoL-Rz-lPX" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="hU1-ft-Hjo"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -51,6 +51,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Clash-of-Clans-Logo.png" width="1000" height="490"/>
+        <image name="clash-iphone-splash.jpg" width="640" height="960"/>
     </resources>
 </document>

@@ -10,6 +10,7 @@
 		339D5DBEB903AA2AFE77A58F /* libPods-ClashOfClans.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9EE760ED02F9C7D03DBBDA5 /* libPods-ClashOfClans.a */; };
 		6D25CB0320F5B63A34BA50E0 /* libPods-ClashOfClansUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 972EF2B0C0A561DF9DC6AB61 /* libPods-ClashOfClansUITests.a */; };
 		E112C9C27BEB08ED7C3FB29A /* libPods-ClashOfClansTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F2EB7E62360924C0EE7B817 /* libPods-ClashOfClansTests.a */; };
+		F91A342C1D45A6C5001CF05F /* clash-iphone-splash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F91A342B1D45A6C5001CF05F /* clash-iphone-splash.jpg */; };
 		F972B47F1D43D8CF00D760FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F972B47E1D43D8CF00D760FB /* main.m */; };
 		F972B4821D43D8CF00D760FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F972B4811D43D8CF00D760FB /* AppDelegate.m */; };
 		F972B4851D43D8CF00D760FB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F972B4841D43D8CF00D760FB /* ViewController.m */; };
@@ -66,6 +67,7 @@
 		972EF2B0C0A561DF9DC6AB61 /* libPods-ClashOfClansUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ClashOfClansUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9EE760ED02F9C7D03DBBDA5 /* libPods-ClashOfClans.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ClashOfClans.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5BC1043D9EEE3AE92B63A92 /* Pods-ClashOfClansTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClashOfClansTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClashOfClansTests/Pods-ClashOfClansTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F91A342B1D45A6C5001CF05F /* clash-iphone-splash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "clash-iphone-splash.jpg"; sourceTree = "<group>"; };
 		F972B47A1D43D8CF00D760FB /* ClashOfClans.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClashOfClans.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F972B47E1D43D8CF00D760FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F972B4801D43D8CF00D760FB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -237,6 +239,7 @@
 		F972B4B41D43DB3900D760FB /* images */ = {
 			isa = PBXGroup;
 			children = (
+				F91A342B1D45A6C5001CF05F /* clash-iphone-splash.jpg */,
 				F9CA25B91D450632003479E9 /* trophy_icon.png */,
 				F972B4BA1D44022900D760FB /* liga-icon.png */,
 				F972B4B61D43FBC700D760FB /* symbol-levl.png */,
@@ -458,6 +461,7 @@
 				F972B4881D43D8CF00D760FB /* Main.storyboard in Resources */,
 				F972B4B31D43DB3000D760FB /* clashofclanslogo.png in Resources */,
 				F972B4B11D43DA6400D760FB /* Clash-of-Clans-Logo.png in Resources */,
+				F91A342C1D45A6C5001CF05F /* clash-iphone-splash.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
