@@ -12,7 +12,7 @@
 #import "MembersWebService.h"
 #import "MembersModel.h"
 #import "GLBDefinitions.h"
-
+#import "MembersDetailViewController.h"
 
 
 @interface clanDetailsViewController : UIViewController<UITableViewDelegate, UITableViewDataSource, UIActionSheetDelegate>
@@ -36,7 +36,7 @@
 @property (nonatomic, strong) NSMutableArray *MembersList;
 @property (nonatomic, strong) NSMutableArray *ClanList;
 @property (nonatomic, strong) NSMutableArray *ClanDetails;
-
+@property (nonatomic, strong) NSMutableArray *MembersSelected;
 
 @property (weak, nonatomic) IBOutlet UITableView *membersTableView;
 

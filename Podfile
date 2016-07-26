@@ -17,3 +17,4 @@ end
 
 pod 'AFNetworking', '~> 2.6'
 pod 'SDWebImage', '~>3.7'
+pod 'SABlurImageViewObjc'

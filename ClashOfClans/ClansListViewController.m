@@ -68,6 +68,18 @@
     ClanSelected = [ClanList objectAtIndex:indexPath.row];
     [self performSegueWithIdentifier:@"ClanDetailsSegue" sender:self];
 }
+-(NSString*)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section   {
+    
+    NSString *message = @"";
+    NSInteger numberOfRowsInSection = [self tableView:ClansTableView numberOfRowsInSection:section ];
+    
+    if (numberOfRowsInSection == 0) {
+        message = @"Sin Resultados";
+    }
+    
+    return message;
+}
+
 
 #pragma mark - Navigation
 
@@ -82,17 +94,6 @@
         destination.Clan = (ClansModel*)ClanSelected;
     }
     
-}
--(NSString*)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section   {
-    
-    NSString *message = @"";
-    NSInteger numberOfRowsInSection = [self tableView:ClansTableView numberOfRowsInSection:section ];
-    
-    if (numberOfRowsInSection == 0) {
-        message = @"Sin Resultados";
-    }
-    
-    return message;
 }
 
 

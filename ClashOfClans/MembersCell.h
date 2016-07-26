@@ -14,6 +14,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *xpLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *ligaIcon;
 @property (weak, nonatomic) IBOutlet UILabel *memeberNameLabel;
-
+@property (weak, nonatomic) IBOutlet UILabel *trophiesLabel;
 - (void)loadCellData:(MembersModel *)members;
 @end

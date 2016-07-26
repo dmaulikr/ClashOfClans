@@ -1,10 +1,54 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="oFB-MH-bZO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="oFB-MH-bZO">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Supercell-magic-webfont.ttf">
+            <string>Supercell-Magic</string>
+            <string>Supercell-Magic</string>
+            <string>Supercell-Magic</string>
+            <string>Supercell-Magic</string>
+            <string>Supercell-Magic</string>
+            <string>Supercell-Magic</string>
+            <string>Supercell-Magic</string>
+            <string>Supercell-Magic</string>
+            <string>Supercell-Magic</string>
+            <string>Supercell-Magic</string>
+            <string>Supercell-Magic</string>
+            <string>Supercell-Magic</string>
+            <string>Supercell-Magic</string>
+            <string>Supercell-Magic</string>
+            <string>Supercell-Magic</string>
+            <string>Supercell-Magic</string>
+            <string>Supercell-Magic</string>
+            <string>Supercell-Magic</string>
+            <string>Supercell-Magic</string>
+            <string>Supercell-Magic</string>
+            <string>Supercell-Magic</string>
+            <string>Supercell-Magic</string>
+            <string>Supercell-Magic</string>
+            <string>Supercell-Magic</string>
+            <string>Supercell-Magic</string>
+            <string>Supercell-Magic</string>
+            <string>Supercell-Magic</string>
+            <string>Supercell-Magic</string>
+            <string>Supercell-Magic</string>
+            <string>Supercell-Magic</string>
+            <string>Supercell-Magic</string>
+            <string>Supercell-Magic</string>
+            <string>Supercell-Magic</string>
+            <string>Supercell-Magic</string>
+            <string>Supercell-Magic</string>
+            <string>Supercell-Magic</string>
+            <string>Supercell-Magic</string>
+            <string>Supercell-Magic</string>
+            <string>Supercell-Magic</string>
+            <string>Supercell-Magic</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--Clash of Clans-->
         <scene sceneID="tne-QT-ifu">
@@ -29,7 +73,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="pnj-oS-32n"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Supercell-Magic" family="Supercell-Magic" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingrese el nombre del Clan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ht-ev-UV8">
@@ -37,7 +81,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="vgZ-15-2Ze"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <fontDescription key="fontDescription" name="Supercell-Magic" family="Supercell-Magic" pointSize="15"/>
                                 <color key="textColor" red="0.99607843139999996" green="0.83137254900000002" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" red="0.60784313729999995" green="0.078431372550000003" blue="0.054901960780000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -50,7 +94,7 @@
                                     <constraint firstAttribute="width" constant="182" id="WTV-nW-1mV"/>
                                     <constraint firstAttribute="height" constant="40" id="bb3-fZ-FEh"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="Supercell-Magic" family="Supercell-Magic" pointSize="20"/>
                                 <state key="normal" title="BUSCAR">
                                     <color key="titleColor" red="0.99607843137254903" green="0.83137254901960789" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -116,32 +160,32 @@
                                             </variation>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="winterfell" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hu2-81-ZYf">
-                                            <rect key="frame" x="60" y="1" width="208" height="39"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                            <rect key="frame" x="60" y="1" width="200" height="39"/>
+                                            <fontDescription key="fontDescription" name="Supercell-Magic" family="Supercell-Magic" pointSize="16"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                             <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <size key="shadowOffset" width="1" height="1"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12345" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l4C-S8-BMd">
-                                            <rect key="frame" x="269" y="7" width="106" height="29"/>
+                                            <rect key="frame" x="261" y="9" width="106" height="25"/>
                                             <color key="backgroundColor" red="0.88235294117647056" green="0.74509803921568629" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="106" id="Bmv-w4-iQT"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <fontDescription key="fontDescription" name="Supercell-Magic" family="Supercell-Magic" pointSize="15"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                             <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <size key="shadowOffset" width="1" height="2"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trophy_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="eCj-zM-WG2">
-                                            <rect key="frame" x="331" y="0.0" width="44" height="43"/>
+                                            <rect key="frame" x="329" y="0.0" width="38" height="43"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="43" id="AcQ-m8-4Yd"/>
                                                 <constraint firstAttribute="height" constant="45" id="Qsu-YP-PV9"/>
                                                 <constraint firstAttribute="width" constant="43" id="Vyd-7P-rOP"/>
-                                                <constraint firstAttribute="width" constant="44" id="Vzm-LA-YOD"/>
+                                                <constraint firstAttribute="width" constant="38" id="Vzm-LA-YOD"/>
                                                 <constraint firstAttribute="width" constant="43" id="wFn-b6-7A4"/>
                                             </constraints>
                                             <variation key="default">
@@ -157,17 +201,17 @@
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="84" id="1ij-u8-arS"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <fontDescription key="fontDescription" name="Supercell-Magic" family="Supercell-Magic" pointSize="8"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="l4C-S8-BMd" firstAttribute="top" secondItem="MB4-Df-Ew0" secondAttribute="top" constant="7" id="01w-WP-L94"/>
+                                        <constraint firstItem="l4C-S8-BMd" firstAttribute="top" secondItem="MB4-Df-Ew0" secondAttribute="top" constant="9" id="01w-WP-L94"/>
                                         <constraint firstItem="TZK-gf-TKt" firstAttribute="leading" secondItem="MB4-Df-Ew0" secondAttribute="leading" constant="8" id="1XJ-dc-LiF"/>
                                         <constraint firstAttribute="bottom" secondItem="Hu2-81-ZYf" secondAttribute="bottom" constant="3" id="36c-Ah-Ffa"/>
                                         <constraint firstAttribute="bottom" secondItem="TZK-gf-TKt" secondAttribute="bottom" id="3Qg-0q-vHQ"/>
-                                        <constraint firstAttribute="trailing" secondItem="eCj-zM-WG2" secondAttribute="trailing" id="79W-fL-wrq"/>
+                                        <constraint firstAttribute="trailing" secondItem="eCj-zM-WG2" secondAttribute="trailing" constant="8" id="79W-fL-wrq"/>
                                         <constraint firstItem="tzz-3r-UMd" firstAttribute="leading" secondItem="TZK-gf-TKt" secondAttribute="trailing" constant="8" id="8Zy-39-vrn"/>
                                         <constraint firstItem="TZK-gf-TKt" firstAttribute="top" secondItem="MB4-Df-Ew0" secondAttribute="top" id="93X-St-0Rj"/>
                                         <constraint firstItem="Hu2-81-ZYf" firstAttribute="leading" secondItem="TZK-gf-TKt" secondAttribute="trailing" constant="8" id="9Hh-Zm-78Z"/>
@@ -176,16 +220,16 @@
                                         <constraint firstAttribute="bottom" secondItem="TZK-gf-TKt" secondAttribute="bottom" constant="-1" id="Cy5-0A-KAz"/>
                                         <constraint firstItem="eCj-zM-WG2" firstAttribute="height" secondItem="TZK-gf-TKt" secondAttribute="height" id="DCf-nA-wQ3"/>
                                         <constraint firstAttribute="bottom" secondItem="eCj-zM-WG2" secondAttribute="bottom" id="Khw-3m-3cl"/>
-                                        <constraint firstAttribute="trailing" secondItem="l4C-S8-BMd" secondAttribute="trailing" id="MUV-Vd-yWP"/>
+                                        <constraint firstAttribute="trailing" secondItem="l4C-S8-BMd" secondAttribute="trailing" constant="8" id="MUV-Vd-yWP"/>
                                         <constraint firstItem="eCj-zM-WG2" firstAttribute="height" secondItem="TZK-gf-TKt" secondAttribute="height" id="NTK-DF-uY3"/>
-                                        <constraint firstAttribute="trailing" secondItem="eCj-zM-WG2" secondAttribute="trailing" id="WCj-9g-9mq"/>
+                                        <constraint firstAttribute="trailing" secondItem="eCj-zM-WG2" secondAttribute="trailing" constant="8" id="WCj-9g-9mq"/>
                                         <constraint firstItem="TZK-gf-TKt" firstAttribute="top" secondItem="MB4-Df-Ew0" secondAttribute="top" constant="5" id="aJp-eX-yPQ"/>
                                         <constraint firstAttribute="bottom" secondItem="eCj-zM-WG2" secondAttribute="bottom" id="am3-sD-fh4"/>
                                         <constraint firstItem="l4C-S8-BMd" firstAttribute="leading" secondItem="Hu2-81-ZYf" secondAttribute="trailing" constant="1" id="kT2-Nn-MCP"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="eCj-zM-WG2" secondAttribute="trailing" id="vNo-gX-dDb"/>
                                         <constraint firstItem="eCj-zM-WG2" firstAttribute="top" secondItem="MB4-Df-Ew0" secondAttribute="top" id="vuj-9n-Xfe"/>
                                         <constraint firstItem="eCj-zM-WG2" firstAttribute="top" secondItem="MB4-Df-Ew0" secondAttribute="top" id="xCo-N8-dnv"/>
-                                        <constraint firstAttribute="bottom" secondItem="l4C-S8-BMd" secondAttribute="bottom" constant="7" id="z8o-o3-WCM"/>
+                                        <constraint firstAttribute="bottom" secondItem="l4C-S8-BMd" secondAttribute="bottom" constant="9" id="z8o-o3-WCM"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="tzz-3r-UMd" secondAttribute="bottom" constant="-7" id="zLe-Di-SNu"/>
                                     </constraints>
                                     <variation key="default">
@@ -249,7 +293,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="25" id="HVm-Um-WIw"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="Supercell-Magic" family="Supercell-Magic" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -350,56 +394,56 @@
                                                     <constraint firstAttribute="height" constant="21" id="vut-ZS-Eoa"/>
                                                     <constraint firstAttribute="width" constant="143" id="ybR-3a-O1o"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <fontDescription key="fontDescription" name="Supercell-Magic" family="Supercell-Magic" pointSize="8"/>
                                                 <nil key="highlightedColor"/>
                                                 <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <size key="shadowOffset" width="1" height="1"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guerras ganadas:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8yq-so-VoZ">
                                                 <rect key="frame" x="0.0" y="21" width="143" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <fontDescription key="fontDescription" name="Supercell-Magic" family="Supercell-Magic" pointSize="8"/>
                                                 <nil key="highlightedColor"/>
                                                 <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <size key="shadowOffset" width="1" height="1"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Racha de victorias:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GLy-Kj-xm6">
                                                 <rect key="frame" x="0.0" y="40" width="143" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <fontDescription key="fontDescription" name="Supercell-Magic" family="Supercell-Magic" pointSize="8"/>
                                                 <nil key="highlightedColor"/>
                                                 <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <size key="shadowOffset" width="1" height="1"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Miembros:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g9e-zk-dO0">
                                                 <rect key="frame" x="0.0" y="58" width="143" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <fontDescription key="fontDescription" name="Supercell-Magic" family="Supercell-Magic" pointSize="8"/>
                                                 <nil key="highlightedColor"/>
                                                 <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <size key="shadowOffset" width="1" height="1"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tipo de clan:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RkY-Kq-bu8">
                                                 <rect key="frame" x="0.0" y="76" width="143" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <fontDescription key="fontDescription" name="Supercell-Magic" family="Supercell-Magic" pointSize="8"/>
                                                 <nil key="highlightedColor"/>
                                                 <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <size key="shadowOffset" width="1" height="1"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trofeos requeridos:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RER-Hw-sBE">
                                                 <rect key="frame" x="0.0" y="95" width="143" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <fontDescription key="fontDescription" name="Supercell-Magic" family="Supercell-Magic" pointSize="8"/>
                                                 <nil key="highlightedColor"/>
                                                 <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <size key="shadowOffset" width="1" height="1"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frecuencia de guerra:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GkS-cQ-gbt">
                                                 <rect key="frame" x="0.0" y="114" width="143" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <fontDescription key="fontDescription" name="Supercell-Magic" family="Supercell-Magic" pointSize="8"/>
                                                 <nil key="highlightedColor"/>
                                                 <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <size key="shadowOffset" width="1" height="1"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ubicación del clan:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNK-6U-Nuc">
                                                 <rect key="frame" x="0.0" y="133" width="143" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <fontDescription key="fontDescription" name="Supercell-Magic" family="Supercell-Magic" pointSize="8"/>
                                                 <nil key="highlightedColor"/>
                                                 <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <size key="shadowOffset" width="1" height="1"/>
@@ -409,56 +453,56 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="21" id="LQP-oU-AZ5"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <fontDescription key="fontDescription" name="Supercell-Magic" family="Supercell-Magic" pointSize="8"/>
                                                 <nil key="highlightedColor"/>
                                                 <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <size key="shadowOffset" width="1" height="1"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="58o-eu-CZ2">
                                                 <rect key="frame" x="145" y="21" width="89" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <fontDescription key="fontDescription" name="Supercell-Magic" family="Supercell-Magic" pointSize="8"/>
                                                 <nil key="highlightedColor"/>
                                                 <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <size key="shadowOffset" width="1" height="1"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="deq-LP-1v4">
                                                 <rect key="frame" x="144" y="40" width="89" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <fontDescription key="fontDescription" name="Supercell-Magic" family="Supercell-Magic" pointSize="8"/>
                                                 <nil key="highlightedColor"/>
                                                 <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <size key="shadowOffset" width="1" height="1"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uf0-Qn-6sq">
                                                 <rect key="frame" x="145" y="58" width="89" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <fontDescription key="fontDescription" name="Supercell-Magic" family="Supercell-Magic" pointSize="8"/>
                                                 <nil key="highlightedColor"/>
                                                 <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <size key="shadowOffset" width="1" height="1"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2fA-QR-yNO">
                                                 <rect key="frame" x="145" y="76" width="89" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <fontDescription key="fontDescription" name="Supercell-Magic" family="Supercell-Magic" pointSize="8"/>
                                                 <nil key="highlightedColor"/>
                                                 <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <size key="shadowOffset" width="1" height="1"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bBA-70-0AS">
                                                 <rect key="frame" x="145" y="95" width="89" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <fontDescription key="fontDescription" name="Supercell-Magic" family="Supercell-Magic" pointSize="8"/>
                                                 <nil key="highlightedColor"/>
                                                 <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <size key="shadowOffset" width="1" height="1"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P0A-zG-Ksd">
                                                 <rect key="frame" x="145" y="114" width="89" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <fontDescription key="fontDescription" name="Supercell-Magic" family="Supercell-Magic" pointSize="8"/>
                                                 <nil key="highlightedColor"/>
                                                 <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <size key="shadowOffset" width="1" height="1"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1x2-Kk-mDP">
                                                 <rect key="frame" x="145" y="132" width="89" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <fontDescription key="fontDescription" name="Supercell-Magic" family="Supercell-Magic" pointSize="8"/>
                                                 <nil key="highlightedColor"/>
                                                 <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <size key="shadowOffset" width="1" height="1"/>
@@ -553,7 +597,7 @@
                                                             <constraint firstAttribute="height" constant="35" id="7B9-tf-1CC"/>
                                                             <constraint firstAttribute="width" constant="120" id="Vfe-Tz-eA3"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                        <fontDescription key="fontDescription" name="Supercell-Magic" family="Supercell-Magic" pointSize="12"/>
                                                         <state key="normal" title="Galardones">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         </state>
@@ -575,13 +619,13 @@
                                                     </mask>
                                                 </variation>
                                             </imageView>
-                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OxU-pz-xJG" userLabel="ClanLevel">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OxU-pz-xJG" userLabel="ClanLevel">
                                                 <rect key="frame" x="44" y="14" width="40" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="40" id="3Gs-yK-zIv"/>
                                                     <constraint firstAttribute="height" constant="30" id="mrk-hW-kSd"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                <fontDescription key="fontDescription" name="Supercell-Magic" family="Supercell-Magic" pointSize="25"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                                 <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -632,11 +676,11 @@
                                 <rect key="frame" x="0.0" y="336" width="375" height="331"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" id="VP5-Au-8Ly" customClass="MembersCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="Cell" id="VP5-Au-8Ly" customClass="MembersCell">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VP5-Au-8Ly" id="7rQ-Mr-2Q7">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="liga-icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="Q2K-A0-NEc">
@@ -657,36 +701,62 @@
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="33" id="HRh-6v-Fwb"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="Supercell-Magic" family="Supercell-Magic" pointSize="12"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="winterfell" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JTC-6l-xNK">
-                                                    <rect key="frame" x="106" y="8" width="228" height="27"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                                    <rect key="frame" x="106" y="8" width="188" height="27"/>
+                                                    <fontDescription key="fontDescription" name="Supercell-Magic" family="Supercell-Magic" pointSize="16"/>
                                                     <nil key="highlightedColor"/>
                                                     <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <size key="shadowOffset" width="1" height="1"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12345" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l24-nS-Rd4">
+                                                    <rect key="frame" x="297" y="10" width="70" height="23"/>
+                                                    <color key="backgroundColor" red="0.83529411764705885" green="0.6470588235294118" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="70" id="U5w-eP-wmx"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Supercell-Magic" family="Supercell-Magic" pointSize="11"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <size key="shadowOffset" width="1" height="1"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trophy_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="ddE-qA-Pww">
+                                                    <rect key="frame" x="339" y="5" width="28" height="33"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="28" id="JoH-R9-7eD"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="Q2K-A0-NEc" firstAttribute="leading" secondItem="7rQ-Mr-2Q7" secondAttribute="leading" constant="8" id="FcD-Cm-5lO"/>
+                                                <constraint firstAttribute="trailing" secondItem="l24-nS-Rd4" secondAttribute="trailing" constant="8" id="GI8-8S-X5d"/>
                                                 <constraint firstItem="upV-Ms-q2g" firstAttribute="top" secondItem="7rQ-Mr-2Q7" secondAttribute="top" constant="3" id="JQQ-i7-zsB"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="JTC-6l-xNK" secondAttribute="bottom" id="KJe-LN-yfT"/>
+                                                <constraint firstAttribute="trailing" secondItem="ddE-qA-Pww" secondAttribute="trailing" constant="8" id="O3R-zq-c2K"/>
+                                                <constraint firstAttribute="bottom" secondItem="l24-nS-Rd4" secondAttribute="bottom" constant="10" id="QR7-za-PO1"/>
+                                                <constraint firstItem="ddE-qA-Pww" firstAttribute="top" secondItem="7rQ-Mr-2Q7" secondAttribute="top" constant="5" id="RU0-eX-fac"/>
+                                                <constraint firstAttribute="bottom" secondItem="ddE-qA-Pww" secondAttribute="bottom" constant="5" id="UDu-ZL-hzz"/>
                                                 <constraint firstAttribute="bottom" secondItem="Q2K-A0-NEc" secondAttribute="bottom" id="cLG-8Y-pPz"/>
                                                 <constraint firstItem="RYh-Ic-wzC" firstAttribute="leading" secondItem="Q2K-A0-NEc" secondAttribute="trailing" constant="8" id="cPI-Bk-sF8"/>
                                                 <constraint firstItem="JTC-6l-xNK" firstAttribute="leading" secondItem="RYh-Ic-wzC" secondAttribute="trailing" constant="10" id="cVj-Li-vyV"/>
                                                 <constraint firstItem="JTC-6l-xNK" firstAttribute="top" secondItem="7rQ-Mr-2Q7" secondAttribute="topMargin" id="ho6-SB-oLZ"/>
+                                                <constraint firstItem="l24-nS-Rd4" firstAttribute="leading" secondItem="JTC-6l-xNK" secondAttribute="trailing" constant="3" id="idW-bM-kFG"/>
                                                 <constraint firstItem="upV-Ms-q2g" firstAttribute="leading" secondItem="Q2K-A0-NEc" secondAttribute="trailing" constant="4" id="lbU-xa-WAx"/>
                                                 <constraint firstItem="RYh-Ic-wzC" firstAttribute="top" secondItem="7rQ-Mr-2Q7" secondAttribute="top" id="nQF-5q-vco"/>
                                                 <constraint firstAttribute="bottom" secondItem="RYh-Ic-wzC" secondAttribute="bottom" id="oQX-SH-jgk"/>
                                                 <constraint firstItem="Q2K-A0-NEc" firstAttribute="top" secondItem="7rQ-Mr-2Q7" secondAttribute="top" id="ojq-qV-cUR"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="JTC-6l-xNK" secondAttribute="trailing" id="pWi-BI-535"/>
                                                 <constraint firstAttribute="bottom" secondItem="upV-Ms-q2g" secondAttribute="bottom" id="teg-ai-5h8"/>
+                                                <constraint firstItem="l24-nS-Rd4" firstAttribute="top" secondItem="7rQ-Mr-2Q7" secondAttribute="top" constant="10" id="yfN-A2-D9u"/>
                                             </constraints>
                                             <variation key="default">
                                                 <mask key="constraints">
                                                     <exclude reference="teg-ai-5h8"/>
+                                                    <exclude reference="pWi-BI-535"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
@@ -694,6 +764,7 @@
                                         <connections>
                                             <outlet property="ligaIcon" destination="Q2K-A0-NEc" id="LY8-Xl-rYp"/>
                                             <outlet property="memeberNameLabel" destination="JTC-6l-xNK" id="OMI-U7-ZQb"/>
+                                            <outlet property="trophiesLabel" destination="l24-nS-Rd4" id="DVB-os-hjT"/>
                                             <outlet property="xpIcon" destination="upV-Ms-q2g" id="Tad-3C-VL3"/>
                                             <outlet property="xpLabel" destination="RYh-Ic-wzC" id="hJA-pD-BCn"/>
                                         </connections>
@@ -709,10 +780,10 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="ulK-wy-bel"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <color key="textColor" red="0.99607843139999996" green="0.83137254900000002" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Supercell-Magic" family="Supercell-Magic" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
-                                <color key="shadowColor" red="0.60784313729999995" green="0.078431372550000003" blue="0.054901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <size key="shadowOffset" width="2" height="2"/>
                             </label>
                         </subviews>
@@ -747,11 +818,233 @@
                         <outlet property="warFrequencyLabel" destination="P0A-zG-Ksd" id="njm-rn-lbO"/>
                         <outlet property="warWinStreakLabel" destination="deq-LP-1v4" id="gjm-sL-2fZ"/>
                         <outlet property="warWinsLabel" destination="58o-eu-CZ2" id="wtU-Hi-q6N"/>
+                        <segue destination="gqa-5L-h44" kind="show" identifier="MemberDetailSegue" id="e1T-jO-txa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nO6-pV-haM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1973.5" y="432.5"/>
+        </scene>
+        <!--Members Detail View Controller-->
+        <scene sceneID="Wdu-nO-oYN">
+            <objects>
+                <viewController id="gqa-5L-h44" customClass="MembersDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fbY-3N-csA"/>
+                        <viewControllerLayoutGuide type="bottom" id="SB3-i5-sxJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WiG-AA-67q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B58-y2-QkH" userLabel="main-info">
+                                <rect key="frame" x="0.0" y="64" width="375" height="262"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="leagueIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ewc-Wz-cqN">
+                                        <rect key="frame" x="8" y="8" width="120" height="120"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="FCS-l9-JJx"/>
+                                            <constraint firstAttribute="height" constant="120" id="weh-cK-qNR"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crystal League III" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l3R-a9-ldr">
+                                        <rect key="frame" x="130" y="32" width="237" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="38" id="BZu-X2-KY0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Supercell-Magic" family="Supercell-Magic" pointSize="16"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2114" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBg-4u-Nix">
+                                        <rect key="frame" x="130" y="77" width="93" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="93" id="DQo-2o-sBj"/>
+                                            <constraint firstAttribute="height" constant="38" id="QTg-Ju-uj0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Supercell-Magic" family="Supercell-Magic" pointSize="16"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trophy_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="OtN-T1-cFq">
+                                        <rect key="frame" x="130" y="77" width="37" height="37"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="37" id="Z5B-BG-XWz"/>
+                                            <constraint firstAttribute="height" constant="37" id="r3t-Kp-6FF"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xp_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="eLB-Vg-LDo">
+                                        <rect key="frame" x="8" y="136" width="49" height="49"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="49" id="3rN-73-x9m"/>
+                                            <constraint firstAttribute="width" constant="49" id="M6y-fW-sZY"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="symbol-levl.png" translatesAutoresizingMaskIntoConstraints="NO" id="eZr-Od-ilU">
+                                        <rect key="frame" x="8" y="193" width="49" height="49"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="winterfell" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yBk-HD-kDX">
+                                        <rect key="frame" x="59" y="136" width="308" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="26" id="Dq4-8J-HXm"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Supercell-Magic" family="Supercell-Magic" pointSize="15"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#2LYRY0VV8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9M3-dT-dnO">
+                                        <rect key="frame" x="59" y="164" width="132" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="132" id="dPl-II-40q"/>
+                                            <constraint firstAttribute="height" constant="21" id="tAa-cA-thY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Supercell-Magic" family="Supercell-Magic" pointSize="11"/>
+                                        <color key="textColor" red="0.42745098040000001" green="0.42745098040000001" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="team_tera" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e5S-xI-8pF">
+                                        <rect key="frame" x="59" y="193" width="308" height="26"/>
+                                        <fontDescription key="fontDescription" name="Supercell-Magic" family="Supercell-Magic" pointSize="15"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Miembro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SXo-Pj-vVV">
+                                        <rect key="frame" x="59" y="221" width="132" height="21"/>
+                                        <fontDescription key="fontDescription" name="Supercell-Magic" family="Supercell-Magic" pointSize="11"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="233" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Me-Kg-DMj">
+                                        <rect key="frame" x="11" y="150" width="42" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="5Tc-ra-9tl"/>
+                                            <constraint firstAttribute="width" constant="42" id="l68-05-V9a"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Supercell-Magic" family="Supercell-Magic" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <size key="shadowOffset" width="1" height="1"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.92156862745098034" green="0.792156862745098" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="OtN-T1-cFq" firstAttribute="top" secondItem="l3R-a9-ldr" secondAttribute="bottom" constant="7" id="0Sx-vl-hJz"/>
+                                    <constraint firstItem="eZr-Od-ilU" firstAttribute="leading" secondItem="B58-y2-QkH" secondAttribute="leading" constant="8" id="0wA-NL-x46"/>
+                                    <constraint firstAttribute="trailing" secondItem="e5S-xI-8pF" secondAttribute="trailing" constant="8" id="1x6-Ea-CZ9"/>
+                                    <constraint firstItem="l3R-a9-ldr" firstAttribute="top" secondItem="B58-y2-QkH" secondAttribute="top" constant="32" id="2JF-ZG-kfa"/>
+                                    <constraint firstItem="SXo-Pj-vVV" firstAttribute="top" secondItem="e5S-xI-8pF" secondAttribute="bottom" constant="2" id="2m4-sX-ApT"/>
+                                    <constraint firstAttribute="trailing" secondItem="yBk-HD-kDX" secondAttribute="trailing" constant="8" id="9fD-0Z-IfZ"/>
+                                    <constraint firstItem="SXo-Pj-vVV" firstAttribute="leading" secondItem="eZr-Od-ilU" secondAttribute="trailing" constant="2" id="Aow-gT-xFS"/>
+                                    <constraint firstItem="9M3-dT-dnO" firstAttribute="leading" secondItem="eLB-Vg-LDo" secondAttribute="trailing" constant="2" id="Cnn-Km-uhV"/>
+                                    <constraint firstItem="5Me-Kg-DMj" firstAttribute="centerY" secondItem="eLB-Vg-LDo" secondAttribute="centerY" id="GvC-xo-zwZ"/>
+                                    <constraint firstItem="eLB-Vg-LDo" firstAttribute="top" secondItem="Ewc-Wz-cqN" secondAttribute="bottom" constant="8" id="HYO-ED-lUB"/>
+                                    <constraint firstItem="Ewc-Wz-cqN" firstAttribute="leading" secondItem="B58-y2-QkH" secondAttribute="leading" constant="8" id="I7U-uO-2Up"/>
+                                    <constraint firstItem="SXo-Pj-vVV" firstAttribute="width" secondItem="9M3-dT-dnO" secondAttribute="width" id="KGa-fI-Nbn"/>
+                                    <constraint firstAttribute="trailing" secondItem="l3R-a9-ldr" secondAttribute="trailing" constant="8" id="KqM-Ed-WQR"/>
+                                    <constraint firstItem="yBk-HD-kDX" firstAttribute="top" secondItem="Ewc-Wz-cqN" secondAttribute="bottom" constant="8" id="LJL-WE-ckn"/>
+                                    <constraint firstItem="SXo-Pj-vVV" firstAttribute="height" secondItem="9M3-dT-dnO" secondAttribute="height" id="LNX-ac-yYh"/>
+                                    <constraint firstItem="hBg-4u-Nix" firstAttribute="top" secondItem="l3R-a9-ldr" secondAttribute="bottom" constant="7" id="LTr-Jp-fbN"/>
+                                    <constraint firstItem="e5S-xI-8pF" firstAttribute="width" secondItem="yBk-HD-kDX" secondAttribute="width" id="MuP-BD-xKF"/>
+                                    <constraint firstItem="OtN-T1-cFq" firstAttribute="leading" secondItem="Ewc-Wz-cqN" secondAttribute="trailing" constant="2" id="OHV-8b-uOY"/>
+                                    <constraint firstItem="eZr-Od-ilU" firstAttribute="height" secondItem="eLB-Vg-LDo" secondAttribute="height" id="SR9-CW-fwq"/>
+                                    <constraint firstItem="9M3-dT-dnO" firstAttribute="top" secondItem="yBk-HD-kDX" secondAttribute="bottom" constant="2" id="VaV-we-0hX"/>
+                                    <constraint firstItem="eLB-Vg-LDo" firstAttribute="leading" secondItem="B58-y2-QkH" secondAttribute="leading" constant="8" id="Vih-lT-xWC"/>
+                                    <constraint firstItem="l3R-a9-ldr" firstAttribute="leading" secondItem="Ewc-Wz-cqN" secondAttribute="trailing" constant="2" id="XpC-xV-zu7"/>
+                                    <constraint firstItem="e5S-xI-8pF" firstAttribute="leading" secondItem="eZr-Od-ilU" secondAttribute="trailing" constant="2" id="XpV-TS-BTA"/>
+                                    <constraint firstItem="hBg-4u-Nix" firstAttribute="leading" secondItem="Ewc-Wz-cqN" secondAttribute="trailing" constant="2" id="bQL-XV-Opb"/>
+                                    <constraint firstAttribute="height" constant="262" id="dgY-JT-Gp1"/>
+                                    <constraint firstItem="eZr-Od-ilU" firstAttribute="top" secondItem="eLB-Vg-LDo" secondAttribute="bottom" constant="8" id="eAJ-hy-xlM"/>
+                                    <constraint firstItem="e5S-xI-8pF" firstAttribute="top" secondItem="9M3-dT-dnO" secondAttribute="bottom" constant="8" id="fx7-Qe-hSi"/>
+                                    <constraint firstItem="Ewc-Wz-cqN" firstAttribute="top" secondItem="B58-y2-QkH" secondAttribute="top" constant="8" id="krm-H9-lys"/>
+                                    <constraint firstItem="e5S-xI-8pF" firstAttribute="height" secondItem="yBk-HD-kDX" secondAttribute="height" id="nI4-cI-EhH"/>
+                                    <constraint firstItem="yBk-HD-kDX" firstAttribute="leading" secondItem="eLB-Vg-LDo" secondAttribute="trailing" constant="2" id="uSS-8h-Pws"/>
+                                    <constraint firstItem="5Me-Kg-DMj" firstAttribute="centerX" secondItem="eLB-Vg-LDo" secondAttribute="centerX" id="uk3-sQ-Iyq"/>
+                                    <constraint firstItem="eZr-Od-ilU" firstAttribute="width" secondItem="eLB-Vg-LDo" secondAttribute="width" id="xTW-1o-kLn"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vKx-6q-bMz" userLabel="other-details">
+                                <rect key="frame" x="0.0" y="334" width="375" height="91"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Donaciones" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WYU-1L-H7S">
+                                        <rect key="frame" x="8" y="11" width="183" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="26" id="AMf-mY-0z8"/>
+                                            <constraint firstAttribute="width" constant="183" id="KeX-3J-Grh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Supercell-Magic" family="Supercell-Magic" pointSize="11"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5340" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zba-iF-ca7">
+                                        <rect key="frame" x="301" y="11" width="66" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="66" id="5MK-zR-1gt"/>
+                                            <constraint firstAttribute="height" constant="26" id="u0T-yf-KGa"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Supercell-Magic" family="Supercell-Magic" pointSize="11"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Donaciones Recibidas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cua-Ww-V7d">
+                                        <rect key="frame" x="8" y="45" width="183" height="26"/>
+                                        <fontDescription key="fontDescription" name="Supercell-Magic" family="Supercell-Magic" pointSize="11"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5340" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5vz-Nc-gdv">
+                                        <rect key="frame" x="301" y="45" width="66" height="26"/>
+                                        <fontDescription key="fontDescription" name="Supercell-Magic" family="Supercell-Magic" pointSize="11"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="5vz-Nc-gdv" firstAttribute="height" secondItem="zba-iF-ca7" secondAttribute="height" id="6oV-24-I0i"/>
+                                    <constraint firstItem="zba-iF-ca7" firstAttribute="top" secondItem="vKx-6q-bMz" secondAttribute="top" constant="11" id="EoZ-CV-djq"/>
+                                    <constraint firstItem="Cua-Ww-V7d" firstAttribute="width" secondItem="WYU-1L-H7S" secondAttribute="width" id="Jpg-1F-TNZ"/>
+                                    <constraint firstItem="Cua-Ww-V7d" firstAttribute="leading" secondItem="vKx-6q-bMz" secondAttribute="leading" constant="8" id="Uaj-bO-wb9"/>
+                                    <constraint firstItem="WYU-1L-H7S" firstAttribute="top" secondItem="vKx-6q-bMz" secondAttribute="top" constant="11" id="ZF1-Xm-3fc"/>
+                                    <constraint firstItem="Cua-Ww-V7d" firstAttribute="top" secondItem="WYU-1L-H7S" secondAttribute="bottom" constant="8" id="Zik-AX-8AW"/>
+                                    <constraint firstItem="5vz-Nc-gdv" firstAttribute="top" secondItem="zba-iF-ca7" secondAttribute="bottom" constant="8" id="bxC-Jz-2B8"/>
+                                    <constraint firstAttribute="height" constant="91" id="cve-v8-xa8"/>
+                                    <constraint firstItem="5vz-Nc-gdv" firstAttribute="width" secondItem="zba-iF-ca7" secondAttribute="width" id="hKJ-Mf-jbV"/>
+                                    <constraint firstItem="Cua-Ww-V7d" firstAttribute="height" secondItem="WYU-1L-H7S" secondAttribute="height" id="jm1-Rq-U6J"/>
+                                    <constraint firstAttribute="trailing" secondItem="zba-iF-ca7" secondAttribute="trailing" constant="8" id="n4l-Yr-aNI"/>
+                                    <constraint firstItem="WYU-1L-H7S" firstAttribute="leading" secondItem="vKx-6q-bMz" secondAttribute="leading" constant="8" id="obE-eW-8Pt"/>
+                                    <constraint firstAttribute="trailing" secondItem="5vz-Nc-gdv" secondAttribute="trailing" constant="8" id="r5H-dI-wZb"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="B58-y2-QkH" secondAttribute="trailing" id="Cv4-4b-PLC"/>
+                            <constraint firstItem="B58-y2-QkH" firstAttribute="leading" secondItem="WiG-AA-67q" secondAttribute="leading" id="MPR-JX-B2K"/>
+                            <constraint firstItem="B58-y2-QkH" firstAttribute="top" secondItem="fbY-3N-csA" secondAttribute="bottom" id="V6P-ps-fEv"/>
+                            <constraint firstAttribute="trailing" secondItem="vKx-6q-bMz" secondAttribute="trailing" id="svQ-q9-tsT"/>
+                            <constraint firstItem="vKx-6q-bMz" firstAttribute="leading" secondItem="WiG-AA-67q" secondAttribute="leading" id="szK-nX-r7Q"/>
+                            <constraint firstItem="vKx-6q-bMz" firstAttribute="top" secondItem="B58-y2-QkH" secondAttribute="bottom" constant="8" id="yr4-LO-Z9e"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="BackgorundView" destination="B58-y2-QkH" id="0c3-3S-jEN"/>
+                        <outlet property="clanIcon" destination="eZr-Od-ilU" id="wDO-6A-LqP"/>
+                        <outlet property="donationsLabel" destination="zba-iF-ca7" id="Idq-Ng-8Y6"/>
+                        <outlet property="donationsReceivedLabel" destination="5vz-Nc-gdv" id="x60-xL-9fK"/>
+                        <outlet property="expLevelLabel" destination="5Me-Kg-DMj" id="5Z5-BD-DY5"/>
+                        <outlet property="leagueIcon" destination="Ewc-Wz-cqN" id="9El-HK-4BF"/>
+                        <outlet property="leagueNameLabel" destination="l3R-a9-ldr" id="SkO-1r-7vw"/>
+                        <outlet property="nameLabel" destination="yBk-HD-kDX" id="AZs-Fu-saN"/>
+                        <outlet property="roleLabel" destination="SXo-Pj-vVV" id="6XS-kW-P0C"/>
+                        <outlet property="tagLabel" destination="9M3-dT-dnO" id="Bb0-oI-43t"/>
+                        <outlet property="trophiesLabel" destination="hBg-4u-Nix" id="QVk-SQ-dDd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="grS-Jh-P7B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2515.5" y="432.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Vvx-Om-iYh">
@@ -775,6 +1068,7 @@
     </scenes>
     <resources>
         <image name="clashofclanslogo.png" width="306" height="107"/>
+        <image name="leagueIcon.png" width="288" height="288"/>
         <image name="liga-icon.png" width="36" height="36"/>
         <image name="map-coc.png" width="1660" height="822"/>
         <image name="symbol-levl.png" width="200" height="200"/>

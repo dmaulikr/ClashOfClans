@@ -18,7 +18,7 @@
 @implementation clanDetailsViewController
 @synthesize Clan, clanPointsLabel, warWinsLabel, warWinStreakLabel, membersLabel
 , typeLabel, requiredTrophiesLabel, warFrequencyLabel, locationNameLabel
-, clanNameLabel, clanIcon, clanLevelLabel, MembersList, membersTableView, ClanDetails;
+, clanNameLabel, clanIcon, clanLevelLabel, MembersList, membersTableView, ClanDetails, MembersSelected;
 
 
 - (void)viewDidLoad {
@@ -130,5 +130,25 @@
     return cell;
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    //[MembersList objectAtIndex:indexPath.row]
+    MembersSelected = [MembersList objectAtIndex:indexPath.row];
+    [self performSegueWithIdentifier:@"MemberDetailSegue" sender:self];
+}
+
+
+#pragma mark - Navigation
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // TODO: Change current event for selected date in calendar
+    
+    if ([segue.identifier isEqualToString:@"MemberDetailSegue"]) {
+        MembersDetailViewController *destination = (MembersDetailViewController*) segue.destinationViewController;
+        destination.Member = (MembersModel*)MembersSelected;
+        destination.ClanInfo = Clan;
+    }
+    
+}
 
 @end

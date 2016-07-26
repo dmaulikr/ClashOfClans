@@ -10,6 +10,7 @@
 		339D5DBEB903AA2AFE77A58F /* libPods-ClashOfClans.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9EE760ED02F9C7D03DBBDA5 /* libPods-ClashOfClans.a */; };
 		6D25CB0320F5B63A34BA50E0 /* libPods-ClashOfClansUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 972EF2B0C0A561DF9DC6AB61 /* libPods-ClashOfClansUITests.a */; };
 		E112C9C27BEB08ED7C3FB29A /* libPods-ClashOfClansTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F2EB7E62360924C0EE7B817 /* libPods-ClashOfClansTests.a */; };
+		E9A552BDC88F9FF3BFDDDBB1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C19FBBF28E231A6E397A195 /* libPods.a */; };
 		F91A342C1D45A6C5001CF05F /* clash-iphone-splash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F91A342B1D45A6C5001CF05F /* clash-iphone-splash.jpg */; };
 		F972B47F1D43D8CF00D760FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F972B47E1D43D8CF00D760FB /* main.m */; };
 		F972B4821D43D8CF00D760FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F972B4811D43D8CF00D760FB /* AppDelegate.m */; };
@@ -38,6 +39,9 @@
 		F9CA25B81D44FE0C003479E9 /* ClansListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F9CA25B71D44FE0C003479E9 /* ClansListCell.m */; };
 		F9CA25BA1D450632003479E9 /* trophy_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F9CA25B91D450632003479E9 /* trophy_icon.png */; };
 		F9CA25BD1D450C53003479E9 /* ClansListWebService.m in Sources */ = {isa = PBXBuildFile; fileRef = F9CA25BC1D450C53003479E9 /* ClansListWebService.m */; };
+		F9FA35811D46658900624939 /* Supercell-magic-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F9FA35801D4663B700624939 /* Supercell-magic-webfont.ttf */; };
+		F9FA35831D466D8900624939 /* leagueIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = F9FA35821D466D8900624939 /* leagueIcon.png */; };
+		F9FA35861D468FAD00624939 /* MembersDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FA35851D468FAD00624939 /* MembersDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +62,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C19FBBF28E231A6E397A195 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F108EE70CE72129113E3FEB /* Pods-ClashOfClansTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClashOfClansTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClashOfClansTests/Pods-ClashOfClansTests.release.xcconfig"; sourceTree = "<group>"; };
 		424ECC540351A51E9C52DA86 /* Pods-ClashOfClans.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClashOfClans.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClashOfClans/Pods-ClashOfClans.release.xcconfig"; sourceTree = "<group>"; };
 		5F2EB7E62360924C0EE7B817 /* libPods-ClashOfClansTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ClashOfClansTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,6 +122,10 @@
 		F9CA25B91D450632003479E9 /* trophy_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trophy_icon.png; sourceTree = "<group>"; };
 		F9CA25BB1D450C53003479E9 /* ClansListWebService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClansListWebService.h; sourceTree = "<group>"; };
 		F9CA25BC1D450C53003479E9 /* ClansListWebService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClansListWebService.m; sourceTree = "<group>"; };
+		F9FA35801D4663B700624939 /* Supercell-magic-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Supercell-magic-webfont.ttf"; sourceTree = "<group>"; };
+		F9FA35821D466D8900624939 /* leagueIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leagueIcon.png; sourceTree = "<group>"; };
+		F9FA35841D468FAD00624939 /* MembersDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MembersDetailViewController.h; sourceTree = "<group>"; };
+		F9FA35851D468FAD00624939 /* MembersDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MembersDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +134,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				339D5DBEB903AA2AFE77A58F /* libPods-ClashOfClans.a in Frameworks */,
+				E9A552BDC88F9FF3BFDDDBB1 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +163,7 @@
 				A9EE760ED02F9C7D03DBBDA5 /* libPods-ClashOfClans.a */,
 				5F2EB7E62360924C0EE7B817 /* libPods-ClashOfClansTests.a */,
 				972EF2B0C0A561DF9DC6AB61 /* libPods-ClashOfClansUITests.a */,
+				2C19FBBF28E231A6E397A195 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -195,6 +206,7 @@
 		F972B47C1D43D8CF00D760FB /* ClashOfClans */ = {
 			isa = PBXGroup;
 			children = (
+				F9FA357E1D46634E00624939 /* Resources */,
 				F972B4C21D44184D00D760FB /* Application */,
 				F972B4891D43D8CF00D760FB /* Assets.xcassets */,
 				F972B4B51D43F43600D760FB /* Controllers */,
@@ -239,6 +251,7 @@
 		F972B4B41D43DB3900D760FB /* images */ = {
 			isa = PBXGroup;
 			children = (
+				F9FA35821D466D8900624939 /* leagueIcon.png */,
 				F91A342B1D45A6C5001CF05F /* clash-iphone-splash.jpg */,
 				F9CA25B91D450632003479E9 /* trophy_icon.png */,
 				F972B4BA1D44022900D760FB /* liga-icon.png */,
@@ -264,6 +277,8 @@
 				F9CA25B41D44F950003479E9 /* ClansListViewController.m */,
 				F9CA25B61D44FE0C003479E9 /* ClansListCell.h */,
 				F9CA25B71D44FE0C003479E9 /* ClansListCell.m */,
+				F9FA35841D468FAD00624939 /* MembersDetailViewController.h */,
+				F9FA35851D468FAD00624939 /* MembersDetailViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -340,6 +355,22 @@
 			name = Helpers;
 			sourceTree = "<group>";
 		};
+		F9FA357E1D46634E00624939 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F9FA357F1D46635700624939 /* Fonts */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		F9FA357F1D46635700624939 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F9FA35801D4663B700624939 /* Supercell-magic-webfont.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -347,12 +378,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F972B4A71D43D8D100D760FB /* Build configuration list for PBXNativeTarget "ClashOfClans" */;
 			buildPhases = (
+				8FC5FDB86FB19ACDDB2F69AC /* Check Pods Manifest.lock */,
 				44554DA9E9A98A4C7B6F61D4 /* [CP] Check Pods Manifest.lock */,
 				F972B4761D43D8CF00D760FB /* Sources */,
 				F972B4771D43D8CF00D760FB /* Frameworks */,
 				F972B4781D43D8CF00D760FB /* Resources */,
 				D1A2578943640458F2083154 /* [CP] Embed Pods Frameworks */,
 				E6B1E270CFB3AB40C9F936F6 /* [CP] Copy Pods Resources */,
+				13208B50E3418820DF9775C5 /* Embed Pods Frameworks */,
+				316D43AB4D5D0589905A6A34 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -453,6 +487,8 @@
 			files = (
 				F972B4B91D4400D900D760FB /* xp_icon.png in Resources */,
 				F972B48D1D43D8CF00D760FB /* LaunchScreen.storyboard in Resources */,
+				F9FA35831D466D8900624939 /* leagueIcon.png in Resources */,
+				F9FA35811D46658900624939 /* Supercell-magic-webfont.ttf in Resources */,
 				F972B48A1D43D8CF00D760FB /* Assets.xcassets in Resources */,
 				F972B4BD1D44053500D760FB /* map-coc.png in Resources */,
 				F972B4BB1D44022900D760FB /* liga-icon.png in Resources */,
@@ -482,6 +518,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		13208B50E3418820DF9775C5 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		3046573C0813976FBF080587 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -495,6 +546,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ClashOfClansUITests/Pods-ClashOfClansUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		316D43AB4D5D0589905A6A34 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		3BC0123868818FD63EFD12EB /* [CP] Check Pods Manifest.lock */ = {
@@ -557,6 +623,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ClashOfClansTests/Pods-ClashOfClansTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		8FC5FDB86FB19ACDDB2F69AC /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		AA5967D8164800E7080CAA94 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -614,6 +695,7 @@
 				F972B4C01D4407CC00D760FB /* clanDetailsViewController.m in Sources */,
 				F972B4D91D44268B00D760FB /* ServiceLayerFacade.m in Sources */,
 				F972B4CF1D44206600D760FB /* ClansWebService.m in Sources */,
+				F9FA35861D468FAD00624939 /* MembersDetailViewController.m in Sources */,
 				F9CA25BD1D450C53003479E9 /* ClansListWebService.m in Sources */,
 				F972B4DC1D445B1100D760FB /* MembersCell.m in Sources */,
 				F972B4CC1D441A3600D760FB /* ClansModel.m in Sources */,

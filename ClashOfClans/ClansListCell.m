@@ -21,6 +21,9 @@ clanType;
     
     
     clanTrophyLabel.text = [NSString stringWithFormat:@"  %@",clans.clanPoints];
+    clanTrophyLabel.layer.cornerRadius = 10;
+    clanTrophyLabel.layer.masksToBounds = YES;
+
     clanNameLabel.text = clans.clanName;
     
     [clanLogo sd_setImageWithURL:clans.badgeUrlsMedium

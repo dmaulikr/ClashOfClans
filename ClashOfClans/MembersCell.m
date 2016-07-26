@@ -10,7 +10,7 @@
 #import <SDWebImage/UIImageView+WebCache.h>
 
 @implementation MembersCell
-@synthesize xpIcon, xpLabel, memeberNameLabel, ligaIcon;
+@synthesize xpIcon, xpLabel, memeberNameLabel, ligaIcon, trophiesLabel;
 
 - (void)loadCellData:(MembersModel *)members {
     
@@ -23,7 +23,9 @@
                        }];
 
     memeberNameLabel.text = members.name;
-    
+    trophiesLabel.text  = [NSString stringWithFormat:@" %@",members.trophies];
+    trophiesLabel.layer.cornerRadius = 10;
+    trophiesLabel.layer.masksToBounds = YES;
 }
 
 @end
