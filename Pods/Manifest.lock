@@ -1,4 +1,5 @@
 PODS:
+  - ActionSheetPicker-3.0 (2.0.5)
   - AFNetworking (2.6.3):
     - AFNetworking/NSURLConnection (= 2.6.3)
     - AFNetworking/NSURLSession (= 2.6.3)
@@ -26,13 +27,17 @@ PODS:
   - SDWebImage/Core (3.7.5)
 
 DEPENDENCIES:
+  - ActionSheetPicker-3.0
   - AFNetworking (~> 2.6)
   - SABlurImageViewObjc
   - SDWebImage (~> 3.7)
 
 SPEC CHECKSUMS:
+  ActionSheetPicker-3.0: 8312778b6815578e6a86d630fbcf31dc94c534e7
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
   SABlurImageViewObjc: dd7dccc6b1b437f53aadad645d9aa5dfb2346846
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: f0c4798d9df508a4697b57daa8f86f7ecd456dfc
+
+COCOAPODS: 1.0.1

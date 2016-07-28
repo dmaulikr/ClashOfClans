@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ActionSheetPicker-3.0.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-ClashOfClans.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -20,11 +25,6 @@
 			<false/>
 		</dict>
 		<key>Pods-ClashOfClansUITests.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -47,17 +47,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0C12049C4A51B6DDD3F19EBAC946B18A</key>
+		<key>0507EEA3FFFFD970BEB4A71D72DF3989</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2B6588B04B799A12C3772767F156659B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>3048CE2A25A37B2115F93B1542CD950F</key>
+		<key>21DBCF95AB0DA7E0B9552535A6F3AA53</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -67,22 +62,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5FE4FA3F80DA971A1B5A96C9D10C5156</key>
+		<key>434064D7968D15BD27F8916901BA2E29</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CDAA577E997268E0DFD1678C847598EA</key>
+		<key>4C36B1F5D992ACDFD781AFC537E2D4B2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D172E9D41BCBDC37B19400763617094B</key>
+		<key>9AF773A8CADCDB8C3698E5AA80430681</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FC5A99135C8A5D72D808FCA467EAAB7E</key>
+		<key>C52AE13C5126349E4215A2AF1558F29B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F50EE16B6B2CA1E2342B6721A2C4157C</key>
 		<dict>
 			<key>primary</key>
 			<true/>

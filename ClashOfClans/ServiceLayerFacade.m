@@ -27,4 +27,7 @@
     return [MembersWebService getSharedInstance];
 }
 
+- (id<Service>)getLocations {
+    return [LocationsWebService getSharedInstance];
+}
 @end
