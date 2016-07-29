@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '21DBCF95AB0DA7E0B9552535A6F3AA53'
+               BlueprintIdentifier = 'B53F04EB0B4645A20F71FC09'
                BlueprintName = 'Pods-ClashOfClans'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libPods-ClashOfClans.a'>

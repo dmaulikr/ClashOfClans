@@ -9,7 +9,9 @@
 /* Begin PBXBuildFile section */
 		20FEAD1E15F934531DF8CE29 /* libPods-ClashOfClans.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 525E363017ECE571265C0F28 /* libPods-ClashOfClans.a */; };
 		6865E12854723266399BFA60 /* libPods-ClashOfClansTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A38C06C6E81768FEFE2E548 /* libPods-ClashOfClansTests.a */; };
+		8F7CF34BFC32D4A913D260EF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E029A5A4966BDB09F555D032 /* libPods.a */; };
 		A828E462DDB50171797E30B6 /* libPods-ClashOfClansUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 767CEA4474BA1807D80A75B1 /* libPods-ClashOfClansUITests.a */; };
+		F90C39E01D4B9F8600DC6105 /* ClanByTagWebService.m in Sources */ = {isa = PBXBuildFile; fileRef = F90C39DF1D4B9F8600DC6105 /* ClanByTagWebService.m */; };
 		F91A342C1D45A6C5001CF05F /* clash-iphone-splash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F91A342B1D45A6C5001CF05F /* clash-iphone-splash.jpg */; };
 		F972B47F1D43D8CF00D760FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F972B47E1D43D8CF00D760FB /* main.m */; };
 		F972B4821D43D8CF00D760FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F972B4811D43D8CF00D760FB /* AppDelegate.m */; };
@@ -72,7 +74,10 @@
 		767CEA4474BA1807D80A75B1 /* libPods-ClashOfClansUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ClashOfClansUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1A9CA7F66938B6E2B6B797B /* Pods-ClashOfClansTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClashOfClansTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClashOfClansTests/Pods-ClashOfClansTests.release.xcconfig"; sourceTree = "<group>"; };
 		DFCD75B50581FA4B35D0B34C /* Pods-ClashOfClansUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClashOfClansUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClashOfClansUITests/Pods-ClashOfClansUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E029A5A4966BDB09F555D032 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F70AC7E1BFC2AC766541D190 /* Pods-ClashOfClansUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClashOfClansUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClashOfClansUITests/Pods-ClashOfClansUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F90C39DE1D4B9F8600DC6105 /* ClanByTagWebService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClanByTagWebService.h; sourceTree = "<group>"; };
+		F90C39DF1D4B9F8600DC6105 /* ClanByTagWebService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClanByTagWebService.m; sourceTree = "<group>"; };
 		F91A342B1D45A6C5001CF05F /* clash-iphone-splash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "clash-iphone-splash.jpg"; sourceTree = "<group>"; };
 		F972B47A1D43D8CF00D760FB /* ClashOfClans.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClashOfClans.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F972B47E1D43D8CF00D760FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -141,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20FEAD1E15F934531DF8CE29 /* libPods-ClashOfClans.a in Frameworks */,
+				8F7CF34BFC32D4A913D260EF /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +175,7 @@
 				525E363017ECE571265C0F28 /* libPods-ClashOfClans.a */,
 				0A38C06C6E81768FEFE2E548 /* libPods-ClashOfClansTests.a */,
 				767CEA4474BA1807D80A75B1 /* libPods-ClashOfClansUITests.a */,
+				E029A5A4966BDB09F555D032 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -345,6 +352,8 @@
 				F9CA25BC1D450C53003479E9 /* ClansListWebService.m */,
 				F9E069631D49AF7B0074DE9F /* LocationsWebService.h */,
 				F9E069641D49AF7B0074DE9F /* LocationsWebService.m */,
+				F90C39DE1D4B9F8600DC6105 /* ClanByTagWebService.h */,
+				F90C39DF1D4B9F8600DC6105 /* ClanByTagWebService.m */,
 			);
 			name = ServiceAccessLayer;
 			sourceTree = "<group>";
@@ -389,12 +398,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F972B4A71D43D8D100D760FB /* Build configuration list for PBXNativeTarget "ClashOfClans" */;
 			buildPhases = (
+				D3F7F1A77084DF65322EF82F /* Check Pods Manifest.lock */,
 				44554DA9E9A98A4C7B6F61D4 /* [CP] Check Pods Manifest.lock */,
 				F972B4761D43D8CF00D760FB /* Sources */,
 				F972B4771D43D8CF00D760FB /* Frameworks */,
 				F972B4781D43D8CF00D760FB /* Resources */,
 				D1A2578943640458F2083154 /* [CP] Embed Pods Frameworks */,
 				E6B1E270CFB3AB40C9F936F6 /* [CP] Copy Pods Resources */,
+				E9CFAF0E56D6DEDBAA027ED2 /* Embed Pods Frameworks */,
+				2F292493910740F0FDFB88A6 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -526,6 +538,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2F292493910740F0FDFB88A6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		3046573C0813976FBF080587 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -631,6 +658,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ClashOfClans/Pods-ClashOfClans-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D3F7F1A77084DF65322EF82F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		E6B1E270CFB3AB40C9F936F6 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -644,6 +686,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ClashOfClans/Pods-ClashOfClans-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9CFAF0E56D6DEDBAA027ED2 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -665,6 +722,7 @@
 				F972B4CC1D441A3600D760FB /* ClansModel.m in Sources */,
 				F9E0695F1D49AD190074DE9F /* LocationsJSONSerializer.m in Sources */,
 				F9E069651D49AF7B0074DE9F /* LocationsWebService.m in Sources */,
+				F90C39E01D4B9F8600DC6105 /* ClanByTagWebService.m in Sources */,
 				F972B4851D43D8CF00D760FB /* ViewController.m in Sources */,
 				F972B4821D43D8CF00D760FB /* AppDelegate.m in Sources */,
 				F972B47F1D43D8CF00D760FB /* main.m in Sources */,

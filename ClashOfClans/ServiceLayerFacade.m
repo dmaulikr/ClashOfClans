@@ -23,6 +23,7 @@
 - (id<Service>)getClans {
     return [ClansListWebService getSharedInstance];
 }
+
 - (id<Service>)getMembers {
     return [MembersWebService getSharedInstance];
 }
@@ -30,4 +31,9 @@
 - (id<Service>)getLocations {
     return [LocationsWebService getSharedInstance];
 }
+
+- (id<Service>)getClanInfo {
+    return [ClanByTagWebService getSharedInstance];
+}
+
 @end

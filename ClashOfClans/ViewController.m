@@ -9,11 +9,13 @@
 #import "ViewController.h"
 #import "clanDetailsViewController.h"
 #import "MembersCell.h"
+#import "ActionSheetPicker.h"
 
 @interface ViewController (){
     ClansWebService *clanWebService;
     ClansListWebService *clansListWebService;
     LocationsWebService *locationsWebService;
+    ClanByTagWebService *clanByTagWebService;
     NSString *LocationSelected;
 }
 
@@ -21,7 +23,7 @@
 @end
 
 @implementation ViewController
-@synthesize clanName, ClanList, locationId,minMembers, maxMembers, minClanPoints, minClanLevel, LocationsList, LocationsListObjects;
+@synthesize clanName, ClanList, locationId,minMembers, maxMembers, minClanPoints, minClanLevel, LocationsList, LocationsListObjects, clanTag, Clan;
 
 
 
@@ -31,12 +33,41 @@
     clanWebService = [ClansWebService getSharedInstance];
     clansListWebService = [ClansListWebService getSharedInstance];
     locationsWebService = [LocationsWebService getSharedInstance];
+    clanByTagWebService = [ClanByTagWebService getSharedInstance];
     
     ClanList = [[NSMutableArray alloc] init];
     [self loadLocations];
+    locationId.delegate = self;
     
+}
+
+-(BOOL)textFieldShouldBeginEditing:(UITextField *)textField{
+    switch (textField.tag) {
+        case 1:
+            [self loadPicker];
+            break;
+            
+        default:
+            break;
+    }
+    return NO;
+}
+
+-(void)loadPicker{
     
-    
+    [ActionSheetStringPicker showPickerWithTitle:@"Seleccionar Pais"
+                                            rows:[LocationsList valueForKey:@"name"]
+                                initialSelection:0
+                                       doneBlock:^(ActionSheetStringPicker *picker, NSInteger selectedIndex, id selectedValue) {
+                                           NSMutableArray *codPais = [LocationsList objectAtIndex:selectedIndex];
+                                           locationId.text = [codPais valueForKey:@"id"];
+                                           NSLog(@"Picker: %@, Index: %ld, value: %@",
+                                                 picker, (long)selectedIndex, selectedValue);
+                                       }
+                                     cancelBlock:^(ActionSheetStringPicker *picker) {
+                                         NSLog(@"Block Picker Canceled");
+                                     }
+                                          origin:self.view];
 }
 
 
@@ -46,11 +77,16 @@
 }
 
 - (IBAction)searchClan:(id)sender {
+    
     NSLog(@"buscar clan");
   
     if(clanName.text.length <3){
         return [self showMessage:@"La búsqueda debe contener mínimo 3 caracters." withTitle:@"Error de validación"];
     }
+    if(![clanTag.text isEqualToString:@""]){
+        return [self searchClanByTag];
+    }
+    
     NSMutableDictionary *parameters = [[NSMutableDictionary alloc] init];
     
     [parameters setObject:clanName.text forKey:@"name"];
@@ -96,6 +132,31 @@
     }];
 
 }
+
+- (void)searchClanByTag{
+    
+    NSMutableDictionary *parameters = [[NSMutableDictionary alloc] init];
+    
+    [parameters setObject:clanTag.text forKey:@"clanTag"];
+    
+    Clan = [[NSMutableArray alloc] init];
+    [clanByTagWebService callService:parameters withCompletionBlock:^(NSArray *resultArray, NSError *error) {
+        if(error){
+            [self showMessage:[error localizedDescription] withTitle:@"Error consulta"];
+            
+        }else{
+            if([resultArray count]>0){
+                [Clan addObject: [resultArray objectAtIndex:0]];
+                [self performSegueWithIdentifier:@"ClanDetailFromSearchSegue" sender:self];
+                
+            }else{
+                [self showMessage:@"No existe el clan ingresado" withTitle:@"Consulta"];
+            }
+        }
+    }];
+    
+}
+
 
 -(void)loadLocations{
     
@@ -147,6 +208,10 @@
     if ([segue.identifier isEqualToString:@"ClanListSegue"]) {
         ClansListViewController *destination = (ClansListViewController*) segue.destinationViewController;
         destination.ClanList = ClanList;
+    }else if([segue.identifier isEqualToString:@"ClanDetailFromSearchSegue"]){
+        //ClanDetailFromSearchSegue
+        clanDetailsViewController *destination = (clanDetailsViewController*) segue.destinationViewController;
+        destination.Clan = (ClansModel*) Clan;
     }
     
 }

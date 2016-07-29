@@ -14,8 +14,9 @@
 #import "ClansListWebService.h"
 #import "LocationsWebService.h"
 #import "LocationsModel.h"
+#import "ClanByTagWebService.h"
 
-@interface ViewController : UIViewController<UIPickerViewDelegate, UIPickerViewDataSource>
+@interface ViewController : UIViewController<UIPickerViewDelegate, UIPickerViewDataSource, UIGestureRecognizerDelegate, UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *clanName;
 @property (weak, nonatomic) IBOutlet UITextField *locationId;
@@ -24,6 +25,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *minClanPoints;
 @property (weak, nonatomic) IBOutlet UITextField *minClanLevel;
 @property (weak, nonatomic) IBOutlet UIPickerView *locationPicker;
+@property (weak, nonatomic) IBOutlet UITextField *clanTag;
 
 
 
@@ -31,6 +33,7 @@
 @property (nonatomic, strong) NSMutableArray *ClanList;
 
 @property (nonatomic, strong) NSMutableArray *LocationsList;
+@property (nonatomic, strong) NSMutableArray *Clan;
 @property (nonatomic, strong) LocationsModel *LocationsListObjects;
 
 @end

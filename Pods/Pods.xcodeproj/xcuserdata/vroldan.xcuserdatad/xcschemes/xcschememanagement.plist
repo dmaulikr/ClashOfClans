@@ -29,6 +29,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SABlurImageViewObjc-SABlurImageViewObjc.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -47,12 +52,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0507EEA3FFFFD970BEB4A71D72DF3989</key>
+		<key>21DBCF95AB0DA7E0B9552535A6F3AA53</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>21DBCF95AB0DA7E0B9552535A6F3AA53</key>
+		<key>3770BAAEC21B042ED1FB259E5D4D2F63</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,22 +67,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>434064D7968D15BD27F8916901BA2E29</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>4C36B1F5D992ACDFD781AFC537E2D4B2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9AF773A8CADCDB8C3698E5AA80430681</key>
+		<key>5E2D0789887752A892770E1A3B0CDFCB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C52AE13C5126349E4215A2AF1558F29B</key>
+		<key>8511BF8070CBA51672F42B30873C9F9B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>864AD40779439129D4A87E0B8B29938B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9AF773A8CADCDB8C3698E5AA80430681</key>
 		<dict>
 			<key>primary</key>
 			<true/>

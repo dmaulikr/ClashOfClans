@@ -12,6 +12,7 @@
 #import "MembersWebService.h"
 #import "ClansListWebService.h"
 #import "LocationsWebService.h"
+#import "ClanByTagWebService.h"
 
 @interface ServiceLayerFacade : NSObject
 
@@ -20,5 +21,6 @@
 - (id<Service>)getClans;
 - (id<Service>)getMembers;
 - (id<Service>)getLocations;
+- (id<Service>)getClanInfo;
 
 @end
