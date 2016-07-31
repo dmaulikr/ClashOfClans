@@ -27,5 +27,11 @@
     
 }
 
++(void)BackgroundColorCell:(UITableViewCell*)Cell{
+    CAGradientLayer *gradient = [CAGradientLayer layer];
+    gradient.frame = Cell.bounds;
+    gradient.colors = [NSArray arrayWithObjects:(id)[UIColor colorWithRed:0.23 green:0.22 blue:0.22 alpha:1.0].CGColor, (id)[UIColor colorWithRed:0.35 green:0.35 blue:0.35 alpha:1.0].CGColor, [UIColor colorWithRed:0.23 green:0.22 blue:0.22 alpha:1.0].CGColor, nil];
+    [Cell.layer insertSublayer:gradient atIndex:0];
+}
 
 @end

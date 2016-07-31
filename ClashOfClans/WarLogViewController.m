@@ -26,6 +26,7 @@
     warLogList = [[NSMutableArray alloc] init];
     self.automaticallyAdjustsScrollViewInsets = NO;
 
+    [WarLogTableView setSeparatorColor:[UIColor colorWithRed:0.35 green:0.35 blue:0.35 alpha:1.0]];
     [self searchClanLog];
     NSLog(@"clanTag: %@", clanTagSelected);
 }
@@ -84,6 +85,8 @@
         cell = [[WarLogCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
     }
     [(WarLogCell*)cell loadCellData:(WarLogModel*)[warLogList objectAtIndex:indexPath.row]];
+    [GLBHelper BackgroundColorCell:cell];
+    
     return cell;
 }
 

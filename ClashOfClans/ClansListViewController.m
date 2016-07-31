@@ -8,6 +8,8 @@
 
 #import "ClansListViewController.h"
 #import "clanDetailsViewController.h"
+#import <QuartzCore/QuartzCore.h>
+
 @interface ClansListViewController (){
     
 }
@@ -20,7 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
+    [ClansTableView setSeparatorColor:[UIColor colorWithRed:0.35 green:0.35 blue:0.35 alpha:1.0]];
 }
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:YES];
@@ -57,11 +59,13 @@
         
         cell = [[ClansListCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
     }
-    
     [(ClansListCell*)cell loadCellData:[ClanList objectAtIndex:indexPath.row]];
+    
+    [GLBHelper BackgroundColorCell:cell];
     
     return cell;
 }
+
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
@@ -86,7 +90,6 @@
 #pragma mark - Navigation
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // TODO: Change current event for selected date in calendar
     
     if ([segue.identifier isEqualToString:@"ClanListSegue"]) {
         ClansListViewController *destination = (ClansListViewController*) segue.destinationViewController;

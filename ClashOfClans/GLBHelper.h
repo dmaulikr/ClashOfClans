@@ -13,5 +13,5 @@
 @interface GLBHelper : NSObject
 
 + (void) displayAlertMessage:(NSString*)title message:(NSString*)message;
-
++ (void)BackgroundColorCell:(UITableViewCell*)Cell;
 @end

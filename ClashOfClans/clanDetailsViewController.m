@@ -9,6 +9,7 @@
 #import "clanDetailsViewController.h"
 #import "MembersCell.h"
 #import <KVNProgress/KVNProgress.h>
+#import "GLBHelper.h"
 
 @interface clanDetailsViewController (){
     MembersWebService *memberWebService;
@@ -27,8 +28,8 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     memberWebService = [MembersWebService getSharedInstance];
-
     MembersList = [[NSMutableArray alloc] init];
+    [membersTableView setSeparatorColor:[UIColor colorWithRed:0.35 green:0.35 blue:0.35 alpha:1.0]];
     
     [self loadClanDetails];
     [self callMembers];
@@ -69,59 +70,29 @@
     [memberWebService callService:parameters withCompletionBlock:^(NSArray *resultArray, NSError *error) {
         [KVNProgress dismiss];
         if(error){
-            
-            [self showMessage:[error localizedDescription] withTitle:@"Error consulta"];
-
-            
+            [GLBHelper displayAlertMessage:[error localizedDescription] message:@"Error consulta"];
         }else{
-            
-            //[GLBHelper hideActivityIndicator];
             for (NSDictionary *result2 in resultArray) {
                 [MembersList addObject:result2];
             }
             [membersTableView reloadData];
-            NSLog(@"reload");
-            
-            
-            
         }
     }];
 }
 
 
 - (IBAction)showWarLog:(id)sender {
-    
-    
     [self performSegueWithIdentifier:@"WarLogSegue" sender:self];
-}
-
-
--(void)showMessage:(NSString*)message withTitle:(NSString *)title
-{
-    UIAlertController * alert=   [UIAlertController
-                                  alertControllerWithTitle:title
-                                  message:message
-                                  preferredStyle:UIAlertControllerStyleAlert];
-    
-    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action){
-        
-        //do something when click button
-    }];
-    [alert addAction:okAction];
-    UIViewController *vc = [[[[UIApplication sharedApplication] delegate] window] rootViewController];
-    [vc presentViewController:alert animated:YES completion:nil];
 }
 
 
 #pragma mark - UITableView Delegate & Source methods
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    
     return [MembersList count];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    
     return 1;
 }
 
@@ -137,22 +108,18 @@
     }
     
     [(MembersCell*)cell loadCellData:[MembersList objectAtIndex:indexPath.row]];
-    
+    [GLBHelper BackgroundColorCell:cell];
     return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    //[MembersList objectAtIndex:indexPath.row]
     MembersSelected = [MembersList objectAtIndex:indexPath.row];
     [self performSegueWithIdentifier:@"MemberDetailSegue" sender:self];
 }
 
 
 #pragma mark - Navigation
-
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // TODO: Change current event for selected date in calendar
     
     if ([segue.identifier isEqualToString:@"MemberDetailSegue"]) {
         MembersDetailViewController *destination = (MembersDetailViewController*) segue.destinationViewController;

@@ -147,25 +147,24 @@
 
 
 -(void)loadLocations{
-    
+    [KVNProgress showWithStatus:@"Cargando Paises"];
     LocationsList = [[NSMutableArray alloc] init];
     [locationsWebService callService:nil withCompletionBlock:^(NSArray *resultArray, NSError *error) {
+        [KVNProgress dismiss];
         if(error){
             [GLBHelper displayAlertMessage:[error localizedDescription] message:@"Error consulta"];
             
         }else{
-            //[GLBHelper hideActivityIndicator];
-            //clanList = [[NSMutableArray alloc] initWithArray: resultArray];
-            
             for (NSDictionary *result2 in resultArray) {
-                //NSLog(@"%@", result2[@"name"]);
                 [LocationsList addObject:result2];
             }
             [_locationPicker reloadAllComponents];
             LocationsListObjects = (LocationsModel*)LocationsList;
+            /*
             for(LocationsModel *locations in LocationsList){
                 NSLog(@"%@->%@", locations._id, locations.name);
             }
+            */
         }
     }];
 
@@ -175,7 +174,6 @@
 #pragma mark - Navigation
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // TODO: Change current event for selected date in calendar
     
     if ([segue.identifier isEqualToString:@"ClanListSegue"]) {
         ClansListViewController *destination = (ClansListViewController*) segue.destinationViewController;
