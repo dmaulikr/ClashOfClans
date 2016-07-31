@@ -1,8 +1,8 @@
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/ActionSheetPicker-3.0" "${PODS_ROOT}/Headers/Public/SABlurImageViewObjc" "${PODS_ROOT}/Headers/Public/SDWebImage"
-LIBRARY_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/AFNetworking" "$PODS_CONFIGURATION_BUILD_DIR/ActionSheetPicker-3.0" "$PODS_CONFIGURATION_BUILD_DIR/SABlurImageViewObjc" "$PODS_CONFIGURATION_BUILD_DIR/SDWebImage"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/AFNetworking" -isystem "${PODS_ROOT}/Headers/Public/ActionSheetPicker-3.0" -isystem "${PODS_ROOT}/Headers/Public/SABlurImageViewObjc" -isystem "${PODS_ROOT}/Headers/Public/SDWebImage"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"AFNetworking" -l"ActionSheetPicker-3.0" -l"SABlurImageViewObjc" -l"SDWebImage" -framework "Accelerate" -framework "CoreGraphics" -framework "ImageIO" -framework "MobileCoreServices" -framework "QuartzCore" -framework "Security" -framework "SystemConfiguration" -framework "UIKit"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/ActionSheetPicker-3.0" "${PODS_ROOT}/Headers/Public/KVNProgress" "${PODS_ROOT}/Headers/Public/SABlurImageViewObjc" "${PODS_ROOT}/Headers/Public/SDWebImage"
+LIBRARY_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/AFNetworking" "$PODS_CONFIGURATION_BUILD_DIR/ActionSheetPicker-3.0" "$PODS_CONFIGURATION_BUILD_DIR/KVNProgress" "$PODS_CONFIGURATION_BUILD_DIR/SABlurImageViewObjc" "$PODS_CONFIGURATION_BUILD_DIR/SDWebImage"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/AFNetworking" -isystem "${PODS_ROOT}/Headers/Public/ActionSheetPicker-3.0" -isystem "${PODS_ROOT}/Headers/Public/KVNProgress" -isystem "${PODS_ROOT}/Headers/Public/SABlurImageViewObjc" -isystem "${PODS_ROOT}/Headers/Public/SDWebImage"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"AFNetworking" -l"ActionSheetPicker-3.0" -l"KVNProgress" -l"SABlurImageViewObjc" -l"SDWebImage" -framework "Accelerate" -framework "CoreGraphics" -framework "GLKit" -framework "ImageIO" -framework "MobileCoreServices" -framework "QuartzCore" -framework "Security" -framework "SystemConfiguration" -framework "UIKit"
 PODS_BUILD_DIR = $BUILD_DIR
 PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_ROOT = ${SRCROOT}/Pods

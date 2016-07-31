@@ -10,6 +10,7 @@
 #import "clanDetailsViewController.h"
 #import "MembersCell.h"
 #import "ActionSheetPicker.h"
+#import <KVNProgress/KVNProgress.h>
 
 @interface ViewController (){
     ClansWebService *clanWebService;
@@ -53,38 +54,30 @@
     return NO;
 }
 
--(void)loadPicker{
-    
-    [ActionSheetStringPicker showPickerWithTitle:@"Seleccionar Pais"
-                                            rows:[LocationsList valueForKey:@"name"]
-                                initialSelection:0
-                                       doneBlock:^(ActionSheetStringPicker *picker, NSInteger selectedIndex, id selectedValue) {
-                                           NSMutableArray *codPais = [LocationsList objectAtIndex:selectedIndex];
-                                           locationId.text = [codPais valueForKey:@"id"];
-                                           NSLog(@"Picker: %@, Index: %ld, value: %@",
-                                                 picker, (long)selectedIndex, selectedValue);
-                                       }
-                                     cancelBlock:^(ActionSheetStringPicker *picker) {
-                                         NSLog(@"Block Picker Canceled");
-                                     }
-                                          origin:self.view];
-}
-
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (IBAction)limpiarFiltros:(id)sender {
+    clanName.text       = @"";
+    locationId.text     = @"";
+    minMembers.text     = @"";
+    maxMembers.text     = @"";
+    minClanLevel.text   = @"";
+    minClanPoints.text  = @"";
+    clanTag.text        = @"";
+}
 
 - (IBAction)searchClan:(id)sender {
+    [KVNProgress showWithStatus:@"Buscando"];
     
-    NSLog(@"buscar clan");
-  
     if(![clanTag.text isEqualToString:@""]){
         return [self searchClanByTag];
     }
     if(clanName.text.length <3){
-        return [self showMessage:@"La búsqueda debe contener mínimo 3 caracters." withTitle:@"Error de validación"];
+        [KVNProgress dismiss];
+        return [GLBHelper displayAlertMessage:@"La búsqueda debe contener mínimo 3 caracters." message:@"Error de validación"];
+        
     }
     NSMutableDictionary *parameters = [[NSMutableDictionary alloc] init];
     
@@ -111,21 +104,14 @@
     
     ClanList = [[NSMutableArray alloc] init];
     [clansListWebService callService:parameters withCompletionBlock:^(NSArray *resultArray, NSError *error) {
+        [KVNProgress dismiss];
         if(error){
-            [self showMessage:[error localizedDescription] withTitle:@"Error consulta"];
-            
+            [GLBHelper displayAlertMessage:[error localizedDescription] message:@"Error consulta"];
         }else{
-            //[GLBHelper hideActivityIndicator];
-            //clanList = [[NSMutableArray alloc] initWithArray: resultArray];
-            
             for (NSDictionary *result2 in resultArray) {
                 [ClanList addObject:result2];
             }
-            
-            //clanList = (ClansModel*) [resultArray objectAtIndex:0];
-            
             [self performSegueWithIdentifier:@"ClanListSegue" sender:self];
-            
             NSLog(@"%@", ClanList);
         }
     }];
@@ -134,15 +120,16 @@
 
 - (void)searchClanByTag{
     
+    [KVNProgress showWithStatus:@"Buscando"];
     NSMutableDictionary *parameters = [[NSMutableDictionary alloc] init];
     
     [parameters setObject:clanTag.text forKey:@"clanTag"];
     
     Clan = [[NSMutableArray alloc] init];
     [clanByTagWebService callService:parameters withCompletionBlock:^(NSArray *resultArray, NSError *error) {
+        [KVNProgress dismiss];
         if(error){
-            NSLog(@"localizedFailureReason: %@", [error localizedDescription]);
-            [self showMessage:[error localizedDescription] withTitle:@"Error consulta"];
+            [GLBHelper displayAlertMessage:[error localizedDescription] message:@"Error consulta"];
             
         }else{
             if([resultArray count]>0){
@@ -150,7 +137,8 @@
                 [self performSegueWithIdentifier:@"ClanDetailFromSearchSegue" sender:self];
                 
             }else{
-                [self showMessage:@"No existe el clan ingresado" withTitle:@"Consulta"];
+
+                [GLBHelper displayAlertMessage:@"No existe el clan ingresado" message:@"Consulta"];
             }
         }
     }];
@@ -163,7 +151,7 @@
     LocationsList = [[NSMutableArray alloc] init];
     [locationsWebService callService:nil withCompletionBlock:^(NSArray *resultArray, NSError *error) {
         if(error){
-            [self showMessage:[error localizedDescription] withTitle:@"Error consulta"];
+            [GLBHelper displayAlertMessage:[error localizedDescription] message:@"Error consulta"];
             
         }else{
             //[GLBHelper hideActivityIndicator];
@@ -184,22 +172,6 @@
     
 }
 
--(void)showMessage:(NSString*)message withTitle:(NSString *)title
-{
-    UIAlertController * alert=   [UIAlertController
-                                  alertControllerWithTitle:title
-                                  message:message
-                                  preferredStyle:UIAlertControllerStyleAlert];
-    
-    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action){
-        
-        //do something when click button
-    }];
-    [alert addAction:okAction];
-    UIViewController *vc = [[[[UIApplication sharedApplication] delegate] window] rootViewController];
-    [vc presentViewController:alert animated:YES completion:nil];
-}
-
 #pragma mark - Navigation
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
@@ -214,6 +186,23 @@
         destination.Clan = (ClansModel*) Clan;
     }
     
+}
+#pragma mark - Picker View 
+-(void)loadPicker{
+    
+    [ActionSheetStringPicker showPickerWithTitle:@"Seleccionar Pais"
+                                            rows:[LocationsList valueForKey:@"name"]
+                                initialSelection:0
+                                       doneBlock:^(ActionSheetStringPicker *picker, NSInteger selectedIndex, id selectedValue) {
+                                           NSMutableArray *codPais = [LocationsList objectAtIndex:selectedIndex];
+                                           locationId.text = [codPais valueForKey:@"id"];
+                                           NSLog(@"Picker: %@, Index: %ld, value: %@",
+                                                 picker, (long)selectedIndex, selectedValue);
+                                       }
+                                     cancelBlock:^(ActionSheetStringPicker *picker) {
+                                         NSLog(@"Block Picker Canceled");
+                                     }
+                                          origin:self.view];
 }
 
 

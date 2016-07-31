@@ -80,9 +80,11 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "KVNProgress/KVNProgress/Resources/KVNProgressView.xib"
   install_resource "$PODS_CONFIGURATION_BUILD_DIR/SABlurImageViewObjc/SABlurImageViewObjc.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "KVNProgress/KVNProgress/Resources/KVNProgressView.xib"
   install_resource "$PODS_CONFIGURATION_BUILD_DIR/SABlurImageViewObjc/SABlurImageViewObjc.bundle"
 fi
 

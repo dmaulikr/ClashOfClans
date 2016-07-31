@@ -21,6 +21,7 @@ PODS:
   - AFNetworking/UIKit (2.6.3):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - KVNProgress (2.2.3)
   - SABlurImageViewObjc (0.2.0)
   - SDWebImage (3.7.5):
     - SDWebImage/Core (= 3.7.5)
@@ -29,15 +30,17 @@ PODS:
 DEPENDENCIES:
   - ActionSheetPicker-3.0
   - AFNetworking (~> 2.6)
+  - KVNProgress
   - SABlurImageViewObjc
   - SDWebImage (~> 3.7)
 
 SPEC CHECKSUMS:
   ActionSheetPicker-3.0: 8312778b6815578e6a86d630fbcf31dc94c534e7
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  KVNProgress: 099c2d0feca4fee4ae3dffee26378c7e2a04edcf
   SABlurImageViewObjc: dd7dccc6b1b437f53aadad645d9aa5dfb2346846
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
 
-PODFILE CHECKSUM: f0c4798d9df508a4697b57daa8f86f7ecd456dfc
+PODFILE CHECKSUM: ab84505a54725e480cca724dd04dbc8e1b1ba6ab
 
 COCOAPODS: 1.0.1

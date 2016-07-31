@@ -15,6 +15,7 @@
 #import "LocationsWebService.h"
 #import "LocationsModel.h"
 #import "ClanByTagWebService.h"
+#import "GLBHelper.h"
 
 @interface ViewController : UIViewController<UIPickerViewDelegate, UIPickerViewDataSource, UIGestureRecognizerDelegate, UITextFieldDelegate>
 

@@ -7,6 +7,8 @@
 //
 
 #import "WarLogViewController.h"
+#import <KVNProgress/KVNProgress.h>
+#import "GLBHelper.h"
 
 @interface WarLogViewController (){
     WarLogWebService *warLogWebService;
@@ -15,13 +17,15 @@
 @end
 
 @implementation WarLogViewController
-@synthesize clanTagSelected, warLogList, WarLogTableView;
+@synthesize clanTagSelected, warLogList, WarLogTableView, SinResultadosLabel;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     warLogWebService = [WarLogWebService getSharedInstance];
-    
+    warLogList = [[NSMutableArray alloc] init];
+    self.automaticallyAdjustsScrollViewInsets = NO;
+
     [self searchClanLog];
     NSLog(@"clanTag: %@", clanTagSelected);
 }
@@ -35,46 +39,32 @@
 
 
 - (void)searchClanLog{
-    
+    [KVNProgress showWithStatus:@"Cargando..."];
     NSMutableDictionary *parameters = [[NSMutableDictionary alloc] init];
     
     [parameters setObject:clanTagSelected forKey:@"clanTag"];
     
-    warLogList = [[NSMutableArray alloc] init];
     [warLogWebService callService:parameters withCompletionBlock:^(NSArray *resultArray, NSError *error) {
+        [KVNProgress dismiss];
         if(error){
-            [self showMessage:[error localizedDescription] withTitle:@"Error consulta"];
-            
+            [SinResultadosLabel setHidden:NO];
+            [GLBHelper displayAlertMessage:[error localizedDescription] message:@"Error consulta"];
         }else{
             if([resultArray count]>0){
+                [SinResultadosLabel setHidden:YES];
                 for (NSDictionary *result2 in resultArray) {
                     [warLogList addObject:result2];
                 }
                 [WarLogTableView reloadData];
                 
             }else{
-                [self showMessage:@"No existe el clan ingresado" withTitle:@"Consulta"];
+                [SinResultadosLabel setHidden:NO];
             }
         }
     }];
     
 }
 
--(void)showMessage:(NSString*)message withTitle:(NSString *)title
-{
-    UIAlertController * alert=   [UIAlertController
-                                  alertControllerWithTitle:title
-                                  message:message
-                                  preferredStyle:UIAlertControllerStyleAlert];
-    
-    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action){
-        
-        //do something when click button
-    }];
-    [alert addAction:okAction];
-    UIViewController *vc = [[[[UIApplication sharedApplication] delegate] window] rootViewController];
-    [vc presentViewController:alert animated:YES completion:nil];
-}
 
 #pragma mark - UITableView Delegate & Source methods
 
@@ -90,14 +80,10 @@
     UITableViewCell *cell;
     
     cell = (WarLogCell*) [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-    
     if (cell == nil) {
-        
         cell = [[WarLogCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
     }
-    
     [(WarLogCell*)cell loadCellData:(WarLogModel*)[warLogList objectAtIndex:indexPath.row]];
-    
     return cell;
 }
 

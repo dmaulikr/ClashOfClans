@@ -8,6 +8,7 @@
 
 #import "clanDetailsViewController.h"
 #import "MembersCell.h"
+#import <KVNProgress/KVNProgress.h>
 
 @interface clanDetailsViewController (){
     MembersWebService *memberWebService;
@@ -60,16 +61,17 @@
 }
 
 - (void)callMembers{
+    [KVNProgress showWithStatus:@"Cargando Miembros del Clan" onView:_membersView];
+    
     NSDictionary *parameters = [[NSDictionary alloc] init];
-    //NSString *clanTag = [NSString stringWithFormat:@"%@%", Clan.clanTag];
     parameters = @{@"memberTag":Clan.clanTag};
     
     [memberWebService callService:parameters withCompletionBlock:^(NSArray *resultArray, NSError *error) {
+        [KVNProgress dismiss];
         if(error){
             
             [self showMessage:[error localizedDescription] withTitle:@"Error consulta"];
-            
-            //[[[UIAlertView alloc] initWithTitle:@"Error" message:[error localizedDescription] delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
+
             
         }else{
             

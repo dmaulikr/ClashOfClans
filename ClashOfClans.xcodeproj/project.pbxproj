@@ -43,6 +43,7 @@
 		F9C262B21D4D998F00CCFD84 /* WarLogJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = F9C262B11D4D998F00CCFD84 /* WarLogJSONSerializer.m */; };
 		F9C262B41D4D9FCB00CCFD84 /* symbol-lvl-opponent.png in Resources */ = {isa = PBXBuildFile; fileRef = F9C262B31D4D9FCB00CCFD84 /* symbol-lvl-opponent.png */; };
 		F9C262B71D4DB3CD00CCFD84 /* WarLogCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F9C262B61D4DB3CD00CCFD84 /* WarLogCell.m */; };
+		F9C262BA1D4E713E00CCFD84 /* GLBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F9C262B91D4E713E00CCFD84 /* GLBHelper.m */; };
 		F9CA25B51D44F950003479E9 /* ClansListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9CA25B41D44F950003479E9 /* ClansListViewController.m */; };
 		F9CA25B81D44FE0C003479E9 /* ClansListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F9CA25B71D44FE0C003479E9 /* ClansListCell.m */; };
 		F9CA25BA1D450632003479E9 /* trophy_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F9CA25B91D450632003479E9 /* trophy_icon.png */; };
@@ -141,6 +142,8 @@
 		F9C262B31D4D9FCB00CCFD84 /* symbol-lvl-opponent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "symbol-lvl-opponent.png"; sourceTree = "<group>"; };
 		F9C262B51D4DB3CD00CCFD84 /* WarLogCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WarLogCell.h; sourceTree = "<group>"; };
 		F9C262B61D4DB3CD00CCFD84 /* WarLogCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WarLogCell.m; sourceTree = "<group>"; };
+		F9C262B81D4E713E00CCFD84 /* GLBHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLBHelper.h; sourceTree = "<group>"; };
+		F9C262B91D4E713E00CCFD84 /* GLBHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLBHelper.m; sourceTree = "<group>"; };
 		F9CA25B31D44F950003479E9 /* ClansListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClansListViewController.h; sourceTree = "<group>"; };
 		F9CA25B41D44F950003479E9 /* ClansListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClansListViewController.m; sourceTree = "<group>"; };
 		F9CA25B61D44FE0C003479E9 /* ClansListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClansListCell.h; sourceTree = "<group>"; };
@@ -403,6 +406,8 @@
 			isa = PBXGroup;
 			children = (
 				F972B4D61D44240100D760FB /* GLBDefinitions.h */,
+				F9C262B81D4E713E00CCFD84 /* GLBHelper.h */,
+				F9C262B91D4E713E00CCFD84 /* GLBHelper.m */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -721,6 +726,7 @@
 				F972B4C91D44198300D760FB /* ClansJSONSerializer.m in Sources */,
 				F972B4E21D4461C700D760FB /* MembersModel.m in Sources */,
 				F972B4DF1D44608900D760FB /* MembersJSONSerializer.m in Sources */,
+				F9C262BA1D4E713E00CCFD84 /* GLBHelper.m in Sources */,
 				F9CA25B51D44F950003479E9 /* ClansListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

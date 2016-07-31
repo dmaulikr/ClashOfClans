@@ -16,5 +16,6 @@
 @property (strong, nonatomic) NSString *clanTagSelected;
 @property (nonatomic, strong) NSMutableArray *warLogList;
 @property (weak, nonatomic) IBOutlet UITableView *WarLogTableView;
+@property (weak, nonatomic) IBOutlet UILabel *SinResultadosLabel;
 
 @end

@@ -38,6 +38,8 @@
 @property (nonatomic, strong) NSMutableArray *ClanDetails;
 @property (nonatomic, strong) NSMutableArray *MembersSelected;
 @property (weak, nonatomic) IBOutlet UILabel *clanTagLabel;
+@property (weak, nonatomic) IBOutlet UIView *clanDetailsView;
+@property (weak, nonatomic) IBOutlet UIView *membersView;
 
 @property (weak, nonatomic) IBOutlet UITableView *membersTableView;
 

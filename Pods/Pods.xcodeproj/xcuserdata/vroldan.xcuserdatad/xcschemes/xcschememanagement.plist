@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>KVNProgress.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-ClashOfClans.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -47,12 +52,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0507EEA3FFFFD970BEB4A71D72DF3989</key>
+		<key>06B2232CE73059846F04E5C3DFEE0D38</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>21DBCF95AB0DA7E0B9552535A6F3AA53</key>
+		<key>21471E8C53ED1D5B462F4318AED9BFB3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3D7F099093E3F2859777231A5D801492</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3DB8453689646C3E6CAF629597036098</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,27 +77,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>434064D7968D15BD27F8916901BA2E29</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>4C36B1F5D992ACDFD781AFC537E2D4B2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9AF773A8CADCDB8C3698E5AA80430681</key>
+		<key>7C293B556D2D18672012BE52C683C46D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C52AE13C5126349E4215A2AF1558F29B</key>
+		<key>A909198B835499BFB5B8AEA39DA803BB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F50EE16B6B2CA1E2342B6721A2C4157C</key>
+		<key>DCB94568755D4BFCA4FF30A520FA637D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
