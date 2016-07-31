@@ -30,5 +30,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *donationsLabel;
 @property (weak, nonatomic) IBOutlet UILabel *donationsReceivedLabel;
 @property (weak, nonatomic) IBOutlet UIView *BackgorundView;
+@property (weak, nonatomic) IBOutlet UILabel *clanNameLabel;
 
 @end

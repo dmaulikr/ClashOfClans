@@ -19,7 +19,7 @@
 @implementation MembersDetailViewController
 @synthesize Member,leagueNameLabel,trophiesLabel,leagueIcon
 ,nameLabel,tagLabel,clanIcon,expLevelLabel,roleLabel
-,donationsLabel,donationsReceivedLabel, ClanInfo;
+,donationsLabel,donationsReceivedLabel, ClanInfo, clanNameLabel;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -41,7 +41,7 @@
     roleLabel.text = Member.role;
     donationsLabel.text = Member.donations;
     donationsReceivedLabel.text = Member.donationsReceived;
-    
+    clanNameLabel.text = ClanInfo.clanName;
     
     [leagueIcon sd_setImageWithURL:Member.leagueIconMedium
                 placeholderImage:nil

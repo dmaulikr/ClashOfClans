@@ -16,4 +16,5 @@
 @property (weak, nonatomic) IBOutlet UILabel *memeberNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *trophiesLabel;
 - (void)loadCellData:(MembersModel *)members;
+
 @end

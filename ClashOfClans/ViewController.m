@@ -80,13 +80,12 @@
     
     NSLog(@"buscar clan");
   
-    if(clanName.text.length <3){
-        return [self showMessage:@"La búsqueda debe contener mínimo 3 caracters." withTitle:@"Error de validación"];
-    }
     if(![clanTag.text isEqualToString:@""]){
         return [self searchClanByTag];
     }
-    
+    if(clanName.text.length <3){
+        return [self showMessage:@"La búsqueda debe contener mínimo 3 caracters." withTitle:@"Error de validación"];
+    }
     NSMutableDictionary *parameters = [[NSMutableDictionary alloc] init];
     
     [parameters setObject:clanName.text forKey:@"name"];
@@ -142,11 +141,12 @@
     Clan = [[NSMutableArray alloc] init];
     [clanByTagWebService callService:parameters withCompletionBlock:^(NSArray *resultArray, NSError *error) {
         if(error){
+            NSLog(@"localizedFailureReason: %@", [error localizedDescription]);
             [self showMessage:[error localizedDescription] withTitle:@"Error consulta"];
             
         }else{
             if([resultArray count]>0){
-                [Clan addObject: [resultArray objectAtIndex:0]];
+                Clan = [resultArray objectAtIndex:0];
                 [self performSegueWithIdentifier:@"ClanDetailFromSearchSegue" sender:self];
                 
             }else{

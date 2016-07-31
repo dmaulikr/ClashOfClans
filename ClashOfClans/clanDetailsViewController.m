@@ -18,7 +18,7 @@
 @implementation clanDetailsViewController
 @synthesize Clan, clanPointsLabel, warWinsLabel, warWinStreakLabel, membersLabel
 , typeLabel, requiredTrophiesLabel, warFrequencyLabel, locationNameLabel
-, clanNameLabel, clanIcon, clanLevelLabel, MembersList, membersTableView, ClanDetails, MembersSelected;
+, clanNameLabel, clanIcon, clanLevelLabel, MembersList, membersTableView, ClanDetails, MembersSelected, clanTagLabel;
 
 
 - (void)viewDidLoad {
@@ -49,7 +49,8 @@
     warFrequencyLabel.text  = Clan.warFrequency;
     locationNameLabel.text  = Clan.locationCountry;
     warWinStreakLabel.text  = Clan.warWinStreak;
-    clanLevelLabel.text    = Clan.clanLevel;
+    clanLevelLabel.text     = Clan.clanLevel;
+    clanTagLabel.text       = Clan.clanTag;
     
     [clanIcon sd_setImageWithURL:Clan.badgeUrlsSmall
                                   placeholderImage:nil
@@ -84,6 +85,14 @@
         }
     }];
 }
+
+
+- (IBAction)showWarLog:(id)sender {
+    
+    
+    [self performSegueWithIdentifier:@"WarLogSegue" sender:self];
+}
+
 
 -(void)showMessage:(NSString*)message withTitle:(NSString *)title
 {
@@ -147,7 +156,12 @@
         MembersDetailViewController *destination = (MembersDetailViewController*) segue.destinationViewController;
         destination.Member = (MembersModel*)MembersSelected;
         destination.ClanInfo = Clan;
+    }else if ([segue.identifier isEqualToString:@"WarLogSegue"]) {
+        WarLogViewController *destination2 = (WarLogViewController*) segue.destinationViewController;
+        destination2.clanTagSelected = Clan.clanTag;
+        
     }
+        
     
 }
 

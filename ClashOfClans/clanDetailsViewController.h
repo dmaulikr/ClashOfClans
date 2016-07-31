@@ -13,7 +13,7 @@
 #import "MembersModel.h"
 #import "GLBDefinitions.h"
 #import "MembersDetailViewController.h"
-
+#import "WarLogViewController.h"
 
 @interface clanDetailsViewController : UIViewController<UITableViewDelegate, UITableViewDataSource, UIActionSheetDelegate>
 
@@ -37,6 +37,7 @@
 @property (nonatomic, strong) NSMutableArray *ClanList;
 @property (nonatomic, strong) NSMutableArray *ClanDetails;
 @property (nonatomic, strong) NSMutableArray *MembersSelected;
+@property (weak, nonatomic) IBOutlet UILabel *clanTagLabel;
 
 @property (weak, nonatomic) IBOutlet UITableView *membersTableView;
 

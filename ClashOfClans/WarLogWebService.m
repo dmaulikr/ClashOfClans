@@ -1,27 +1,29 @@
 //
-//  ClanByTagWebService.m
+//  WarLogWebService.m
 //  ClashOfClans
 //
-//  Created by Victor Roldan on 7/29/16.
+//  Created by Victor Manuel Roldan on 7/30/16.
 //  Copyright © 2016 Victor Roldan. All rights reserved.
 //
 
 
+
+
+//#import "MembersJSONSerializer.h"
+
 #import <Foundation/Foundation.h>
-#import "ClanByTagWebService.h"
-//#import "ClansJSONSerializer.h"
-#import "ClanByTagJSONSerializer.h"
+#import "WarLogWebService.h"
+#import "WarLogWebService.h"
 #import "GLBDefinitions.h"
 
-@implementation ClanByTagWebService
+@implementation WarLogWebService
 
-
-+ (ClanByTagWebService*)getSharedInstance {
-    static ClanByTagWebService *sharedInstance = nil;
++ (WarLogWebService*)getSharedInstance {
+    static WarLogWebService *sharedInstance = nil;
     static dispatch_once_t token;
     dispatch_once(&token, ^{
-        sharedInstance = [[ClanByTagWebService alloc] initWithBaseURL:[NSURL URLWithString: baseUrl]];
-        sharedInstance.responseSerializer = [ClanByTagJSONSerializer serializer];
+        sharedInstance = [[WarLogWebService alloc] initWithBaseURL:[NSURL URLWithString: baseUrl]];
+        sharedInstance.responseSerializer = [WarLogJSONSerializer serializer];
     });
     
     return sharedInstance;
@@ -33,16 +35,14 @@
     //Add request/response serializers and request header
     self.requestSerializer = [AFJSONRequestSerializer serializer];
     self.responseSerializer.acceptableContentTypes = [NSSet setWithObject: httpContentTypeJson];
-
-    [self.requestSerializer setValue:AuthPassword forHTTPHeaderField:AuthUser];
     
+    [self.requestSerializer setValue:AuthPassword forHTTPHeaderField:AuthUser];
     NSString *str = parameters[@"clanTag"];
     
     NSString *unescaped = str;
     NSString *escapedString = [unescaped stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLHostAllowedCharacterSet]];
     
-    NSString *urlRequest = [NSString stringWithFormat:clansInfoUrl, escapedString];
-
+    NSString *urlRequest = [NSString stringWithFormat:clansWarLogUrl, escapedString];
     
     //Send Request
     [self GET:urlRequest parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
@@ -53,5 +53,4 @@
     }];
     
 }
-
 @end

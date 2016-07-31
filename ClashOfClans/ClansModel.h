@@ -30,6 +30,8 @@
 @property (nonatomic, strong) NSURL * badgeUrlsLarge;
 @property (nonatomic, strong) NSURL * badgeUrlsMedium;
 
+
+
 -(id) initWithDictionary:(NSDictionary *)dict;
 
 @end
