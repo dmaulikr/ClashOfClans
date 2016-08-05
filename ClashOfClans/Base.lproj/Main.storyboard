@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="oFB-MH-bZO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="oFB-MH-bZO">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -7,6 +7,7 @@
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="Supercell-magic-webfont.ttf">
+            <string>Supercell-Magic</string>
             <string>Supercell-Magic</string>
             <string>Supercell-Magic</string>
             <string>Supercell-Magic</string>
@@ -98,7 +99,7 @@
                                     <constraint firstAttribute="height" constant="40" id="pnj-oS-32n"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Supercell-Magic" family="Supercell-Magic" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="go"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingrese el nombre del Clan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ht-ev-UV8">
                                 <rect key="frame" x="36" y="229" width="303" height="21"/>
@@ -295,6 +296,16 @@
                                     <action selector="limpiarFiltros:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LoR-14-K9C"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="objective-c" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="as2-Z7-G5S">
+                                <rect key="frame" x="280" y="86" width="90" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="dgg-s1-Mk1"/>
+                                    <constraint firstAttribute="height" constant="21" id="ylC-QM-CIY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Supercell-Magic" family="Supercell-Magic" pointSize="11"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -303,6 +314,8 @@
                             <constraint firstItem="tsP-mw-LwX" firstAttribute="top" secondItem="QrO-Mo-wzX" secondAttribute="bottom" constant="53" id="5yo-wp-MHo"/>
                             <constraint firstAttribute="trailing" secondItem="QrO-Mo-wzX" secondAttribute="trailing" constant="20" id="9AZ-HJ-0ZF"/>
                             <constraint firstItem="QrO-Mo-wzX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="Btv-IA-7Yh"/>
+                            <constraint firstAttribute="trailing" secondItem="as2-Z7-G5S" secondAttribute="trailing" constant="5" id="BxJ-KP-bfO"/>
+                            <constraint firstItem="as2-Z7-G5S" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="22" id="Eoi-AL-4Ux"/>
                             <constraint firstItem="2Ht-ev-UV8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="HWn-Fu-WCH"/>
                             <constraint firstAttribute="trailing" secondItem="Oga-oE-k0a" secondAttribute="trailing" constant="10" id="KM2-39-eBT"/>
                             <constraint firstItem="Oga-oE-k0a" firstAttribute="top" secondItem="QrO-Mo-wzX" secondAttribute="bottom" id="PZs-LS-jG8"/>
@@ -1534,6 +1547,6 @@
         <image name="xp_icon.png" width="40" height="36"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="q9h-c0-SIw"/>
+        <segue reference="1ym-ub-te4"/>
     </inferredMetricsTieBreakers>
 </document>

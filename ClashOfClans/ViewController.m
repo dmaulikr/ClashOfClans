@@ -39,7 +39,17 @@
     ClanList = [[NSMutableArray alloc] init];
     [self loadLocations];
     locationId.delegate = self;
+    [self.view endEditing:YES];
     
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [clanName resignFirstResponder];
+}
+- (BOOL)textFieldShouldReturn:(UITextField *)theTextField {
+    [clanName resignFirstResponder];
+    return YES;
 }
 
 -(BOOL)textFieldShouldBeginEditing:(UITextField *)textField{

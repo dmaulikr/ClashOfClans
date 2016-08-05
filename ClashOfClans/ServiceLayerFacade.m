@@ -35,5 +35,10 @@
 - (id<Service>)getClanInfo {
     return [ClanByTagWebService getSharedInstance];
 }
+- (id<Service>)getWarLog {
+    return [WarLogWebService getSharedInstance];
+}
+
+
 
 @end
